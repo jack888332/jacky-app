@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- 数据库方言 -->
+		<property name="dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+
+		<!-- 管理Session的方式,与Spring集成时,采用如下默认方式 -->
+	    <property name="current_session_context_class">
+	    	org.springframework.orm.hibernate5.SpringSessionContext
+	    </property>
+
+		<!-- 启用二级缓存 -->
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+
+		<!-- 配置二级缓存的产品 -->
+        <property name="hibernate.cache.region.factory_class">
+			org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+		</property>
+
+		<!-- 启用查询二级缓存 -->
+		<property name="hibernate.cache.use_query_cache">true</property>
+
+		<!-- 运行时是否打印SQL -->
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- 运行时是否格式化SQL -->
+		<property name="hibernate.format_sql">true</property>
+
+		<!-- 更新数据表的策略 -->
+		<property name="hibernate.hbm2ddl.auto">validate</property>
+
+		<!-- 数据库的事务隔离级别 -->
+		<property name="hibernate.connection.isolation">2</property>
+
+		<!-- 自动使处于删除状态的对象的OID为null -->
+		<property name="use_identifier_rollback">true</property>
+	</session-factory>
+</hibernate-configuration>
