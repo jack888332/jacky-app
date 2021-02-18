@@ -51,11 +51,11 @@ public class ClientTCP {
 	}
 
 	// 关闭资源
-	private static void close(Closeable resource) {
+	private static void close(AutoCloseable resource) {
 		if (resource != null) {
 			try {
 				resource.close();
-			} catch (IOException e) {
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
