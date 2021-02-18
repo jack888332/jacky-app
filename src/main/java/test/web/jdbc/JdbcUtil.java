@@ -1,7 +1,5 @@
 package test.web.jdbc;
 
-import java.io.Closeable;
-import java.io.IOException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
