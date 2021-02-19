@@ -1,4 +1,4 @@
-package me.base.test.io;
+package test.base.thread;
 
 public class TestThread {
 
