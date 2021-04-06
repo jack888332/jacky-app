@@ -18,6 +18,7 @@ public class Reflection {
 		// 通过对象反射类
 		Person p = new Person();
 		type = p.getClass();
+		System.out.println(type.isMemberClass());
 	}
 
 	private static void printMethod(Class<?> type) throws Exception {

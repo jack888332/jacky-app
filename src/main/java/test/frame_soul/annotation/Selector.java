@@ -12,7 +12,7 @@ public @interface Selector {
 	ComboBox[] type() default { ComboBox.HIGH, ComboBox.LOW };
 
 	Excluder[] exclude();
-
+	
 	Class<?> element1() default Object.class; // Any Class type
 
 	Class<String> element2() default String.class; // Only Test class type

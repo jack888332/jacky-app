@@ -10,5 +10,5 @@ public class AnnotationTest {
 
 @Selector(exclude = { @Excluder(name = "iPhone", cost = 9999.9), @Excluder(name = "iPod", cost = 999.9) })
 class Person {
-
+	
 }

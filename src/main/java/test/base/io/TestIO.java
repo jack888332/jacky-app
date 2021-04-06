@@ -9,11 +9,17 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import sun.nio.cs.UTF_8;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.nio.charset.Charset;
 
 public class TestIO {
-
-	public static void main(String[] args) {
+	
+	static Class<?> pointerToClass;
+	
+	public static void main(String[] args) throws Exception {
+		init();
+		
 		long s = System.currentTimeMillis();
 		copyFileByByteStream("D:\\source.jpg", "D:\\target.jpg");
 		long e = System.currentTimeMillis();
@@ -24,6 +30,11 @@ public class TestIO {
 		e = System.currentTimeMillis();
 		System.out.println("字符流传输毫秒数：" + (e - s));
 
+	}
+	
+	public static void init() throws Exception {
+		// 通过类加载器反射类
+		pointerToClass = Class.forName("sun.nio.cs.UTF_8");
 	}
 
 	private static void copyFileByByteStream(String sourcePath, String targetPath) {
@@ -53,11 +64,14 @@ public class TestIO {
 		}
 	}
 
-	private static void copyFileByCharStream(String sourcePath, String targetPath) {
+	private static void copyFileByCharStream(String sourcePath, String targetPath) throws Exception {
 		BufferedReader br = null;
 		BufferedWriter bw = null;
 		try {
-			br = new BufferedReader(new FileReader(sourcePath, new UTF_8()));
+			Constructor<?> constructor = pointerToClass.getConstructor();
+			Charset charset = (Charset)constructor.newInstance();
+			
+			br = new BufferedReader(new FileReader(sourcePath, charset));
 			bw = new BufferedWriter(new FileWriter(targetPath, true));
 			char[] chars = new char[1024];
 			Integer numberOfChars = null;
