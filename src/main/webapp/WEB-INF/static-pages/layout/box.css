@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.depth1 {
+    margin: 15px 0;
+    padding: 10px 10px;
+    width: 500px;
+    background-color: whitesmoke;
+}
+
+.rank1 {
+    width: 80px;
+    height: 60px;
+    background-color: red;
+    opacity: 0.8;
+}
+
+.rank2 {
+    width: 60px;
+    height: 80px;
+    background-color: seagreen;
+}
+
+.rank3 {
+    width: 80px;
+    height: 60px;
+    background-color: slateblue;
+    opacity: 0.8;
+}
+
+.rank4 {
+    width: 60px;
+    height: 80px;
+    background-color: aqua;
+}
+
+#block1 #box1 {
+    float: left;
+}
+
+#block1 #box3 {
+    float: left;
+}
+
+#block2 #box1 {
+    float: left;
+}
+
+#block2 #box3 {
+    float: left;
+}
