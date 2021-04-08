@@ -35,18 +35,7 @@ body {
     background-color: aqua;
 }
 
-#block1 #box1 {
-    float: left;
-}
-
+#block1 #box1,
 #block1 #box3 {
-    float: left;
-}
-
-#block2 #box1 {
-    float: left;
-}
-
-#block2 #box3 {
     float: left;
 }
