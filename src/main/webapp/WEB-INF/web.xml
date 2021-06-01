@@ -34,6 +34,16 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+     	<servlet-name>MySevletCase</servlet-name>
+		<servlet-class>test.web.servlet.MySevletCase</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MySevletCase</servlet-name>
+		<url-pattern>/MySevletCase</url-pattern>
+	</servlet-mapping>
+	
 	<filter>
 		<filter-name>HiddenHttpMethodFilter</filter-name>
 		<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>

@@ -1,4 +1,4 @@
-package test.frame_soul.reflect;
+package test.base.reflect;
 
 public class Person {
 

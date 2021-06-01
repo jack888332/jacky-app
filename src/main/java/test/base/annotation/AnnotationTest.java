@@ -1,4 +1,4 @@
-package test.frame_soul.annotation;
+package test.base.annotation;
 
 public class AnnotationTest {
 

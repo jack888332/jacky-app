@@ -1,4 +1,4 @@
-package test.frame_soul.annotation;
+package test.base.annotation;
 
 import static java.lang.annotation.RetentionPolicy.CLASS;
 import java.lang.annotation.Retention;
@@ -18,4 +18,5 @@ public @interface Selector {
 	Class<String> element2() default String.class; // Only Test class type
 
 	Class<? extends String> element3() default String.class; // Test or its subclass type
+	
 }

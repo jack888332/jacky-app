@@ -1,4 +1,4 @@
-package test.frame_soul.reflect;
+package test.base.reflect;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,4 @@
-package test.frame_soul.annotation;
+package test.base.annotation;
 
 import static java.lang.annotation.RetentionPolicy.CLASS;
 
@@ -11,4 +11,6 @@ public @interface Excluder {
 	double cost();
 
 	ComboBox type() default ComboBox.HIGH;
+	
+	
 }
