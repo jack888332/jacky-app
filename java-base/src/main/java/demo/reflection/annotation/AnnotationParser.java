@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
-@Scanner(referencedClass = "test.base.reflection.annotation.Car")
+@Scanner(referencedClass = "demo.reflection.annotation.Car")
 public class AnnotationParser {
 
 	public static void main(String[] args) {
