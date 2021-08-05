@@ -1,4 +1,4 @@
-package test.base.thread;
+package demo.thread;
 
 public class Example1 {
 

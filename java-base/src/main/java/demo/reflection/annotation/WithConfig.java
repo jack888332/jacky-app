@@ -1,11 +1,11 @@
-package test.base.reflection.annotation;
+package demo.reflection.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import test.base.enumeration.ComboBox;
+import demo.enumeration.ComboBox;
 
 /*
 注释类型不能从另一个注释类型继承。

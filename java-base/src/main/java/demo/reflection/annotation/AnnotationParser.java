@@ -1,4 +1,4 @@
-package test.base.reflection.annotation;
+package demo.reflection.annotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;

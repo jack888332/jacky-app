@@ -1,4 +1,4 @@
-package test.web.jdbc;
+package demo.jdbc;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

@@ -1,4 +1,4 @@
-package test.base.reflection;
+package demo.reflection;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,4 @@
-package test.base.reflection.annotation;
+package demo.reflection.annotation;
 
 @WithConfig(name = "Jacky", exclude = { @Excluder(name = "Mike") })
 public class Car {

@@ -1,4 +1,4 @@
-package test.base.stream;
+package demo.stream;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

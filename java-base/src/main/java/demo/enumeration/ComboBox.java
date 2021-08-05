@@ -1,4 +1,4 @@
-package test.base.enumeration;
+package demo.enumeration;
 
 /* 每个枚举值都是枚举类的实例对象 */
 public enum ComboBox {

@@ -1,4 +1,4 @@
-package test.base.enumeration;
+package demo.enumeration;
 
 public class EnumTest {
 
