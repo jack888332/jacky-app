@@ -7,9 +7,7 @@
     <artifactId>jacky-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.jackylab</groupId>
   <artifactId>java-base</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>java-base</name>
   <url>http://maven.apache.org</url>
   <properties>

@@ -8,9 +8,7 @@
 		<artifactId>jacky-app</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.jackylab</groupId>
 	<artifactId>java-servlet</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>java-servlet Maven Webapp</name>
 	<url>http://maven.apache.org</url>
