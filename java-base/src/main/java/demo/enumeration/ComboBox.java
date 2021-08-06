@@ -1,6 +1,6 @@
 package demo.enumeration;
 
-/* 每个枚举值都是枚举类的实例对象 */
+/* 每个枚举值实际上是枚举类的静态成员变量，指向枚举类的实例对象，该对象通过调用枚举类的构造方法来创建 */
 public enum ComboBox {
 	LOW("Low Level", 30) {
 		public double getDistance() {

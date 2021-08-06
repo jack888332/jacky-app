@@ -29,6 +29,7 @@ public class Reflection {
 		System.out.println("-> getMethods");
 		methods = type.getMethods();
 		for (Method _method : methods) {
+		    // 只呈现本类的成员方法
 			if (_method.getDeclaringClass().getName().equals(type.getName())) {
 				System.out.println(_method.getName());
 			}
