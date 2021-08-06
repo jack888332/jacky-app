@@ -7,7 +7,7 @@
     
     
     
-    <wb-module deploy-name="spring-ecology">
+    <wb-module deploy-name="java-spring-0.0.1-SNAPSHOT">
                                                                         
         
         
@@ -53,7 +53,7 @@
         
         
         <property name="java-output-path" value="/java-spring/target/classes"/>
-        <property name="context-root" value="spring-ecology"/>
+        <property name="context-root" value="java-spring"/>
                                                                     
     
     

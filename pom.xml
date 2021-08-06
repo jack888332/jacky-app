@@ -14,9 +14,11 @@
 		<module>java-spring</module>
 	</modules>
 
+	<!-- 统一配置模块项目的构建参数 -->
 	<build>
 		<plugins>
-			<plugin> <!-- 编译插件 -->
+			<!-- 编译插件 -->
+			<plugin> 
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -25,6 +27,18 @@
 					<target>15</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
+			</plugin>
+			<!-- 打包插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+			<!-- 打包插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
 			</plugin>
 		</plugins>
 	</build>
