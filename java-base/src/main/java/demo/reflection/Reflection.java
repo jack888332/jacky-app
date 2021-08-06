@@ -12,7 +12,7 @@ public class Reflection {
 
 	public static void init() throws Exception {
 		// 通过类加载器反射类
-		type = Class.forName("test.base.reflection.Person");
+		type = Class.forName("demo.reflection.Person");
 		// 通过类字面常量反射类
 		type = Person.class;
 		// 通过对象反射类
