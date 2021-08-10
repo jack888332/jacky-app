@@ -5,6 +5,7 @@ public class Example1 {
 	public static void main(String[] args) {
 		Object monitor1 = new Object();
 
+		// Lambda表达式
 		new Thread(() -> {
 			while (true) {
 				synchronized (monitor1) {

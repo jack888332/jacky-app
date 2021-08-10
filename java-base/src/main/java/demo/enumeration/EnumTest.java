@@ -12,8 +12,7 @@ public class EnumTest {
 //			System.out.println("name=" + name + ",  description=" + desc + ",  ordinal=" + ordinal + ", levelValue="
 //					+ levelValue + ", distance=" + distance);
 //		}
-		
-		System.out.print(ComboBox.MEDIUM);
+
+		System.out.print("Security".length() - 2);
 	}
 }
-

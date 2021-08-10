@@ -14,13 +14,23 @@
 		<module>java-spring</module>
 	</modules>
 
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 	<!-- 统一配置模块项目的构建参数 -->
 	<build>
 		<plugins>
 			<!-- 编译插件 -->
-			<plugin> 
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 				<configuration>
 					<compilerVersion>15</compilerVersion>
 					<source>15</source>
