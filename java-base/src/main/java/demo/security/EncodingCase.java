@@ -20,7 +20,8 @@ public class EncodingCase {
 					System.out.println(s5e.getClassName());
 				}
 			}
-
+		
+			
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}

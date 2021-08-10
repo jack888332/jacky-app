@@ -13,6 +13,6 @@ public class EnumTest {
 //					+ levelValue + ", distance=" + distance);
 //		}
 
-		System.out.print("Security".length() - 2);
+		System.out.print("Iterator".length() - 2);
 	}
 }
