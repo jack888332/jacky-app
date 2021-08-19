@@ -42,20 +42,19 @@ public class ClientTCP {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			close(isr);
-			close(bos);
-			close(bis);
-			close(plugForServer);
+			close(isr, bos, bis, plugForServer);
 		}
 	}
 
 	// 关闭资源
-	private static void close(AutoCloseable resource) {
-		if (resource != null) {
-			try {
-				resource.close();
-			} catch (Exception e) {
-				e.printStackTrace();
+	private static void close(AutoCloseable... resourceList) {
+		for (AutoCloseable resource : resourceList) {
+			if (resource != null) {
+				try {
+					resource.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}

@@ -49,10 +49,7 @@ public class ServerTcp {
 					} catch (IOException e) {
 						e.printStackTrace();
 					} finally {
-						close(osw);
-						close(bos);
-						close(bis);
-						close(plugForClient);
+						close(osw, bos, bis, plugForClient);
 					}
 				}
 			}).start();
@@ -60,12 +57,14 @@ public class ServerTcp {
 	}
 
 	// 关闭资源
-	private static void close(AutoCloseable resource) {
-		if (resource != null) {
-			try {
-				resource.close();
-			} catch (Exception e) {
-				e.printStackTrace();
+	private static void close(AutoCloseable... resourceList) {
+		for (AutoCloseable resource : resourceList) {
+			if (resource != null) {
+				try {
+					resource.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}

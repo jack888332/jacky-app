@@ -10,7 +10,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
 import java.nio.charset.Charset;
 
 public class TestIO {
@@ -51,20 +50,11 @@ public class TestIO {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			try {
-				if (bos != null) {
-					bos.close();
-				}
-				if (bis != null) {
-					bis.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			close(bis, bos);
 		}
 	}
 
-	private static void copyFileByCharStream(String sourcePath, String targetPath) throws Exception {
+	private static void copyFileByCharStream(String sourcePath, String targetPath) {
 		BufferedReader br = null;
 		BufferedWriter bw = null;
 		try {
@@ -78,18 +68,22 @@ public class TestIO {
 			while ((numberOfChars = br.read(chars)) != -1) {
 				bw.write(chars, 0, numberOfChars);
 			}
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			try {
-				if (bw != null) {
-					bw.close();
+			close(bw, br);
+		}
+	}
+	
+	// 关闭资源
+	private static void close(AutoCloseable... resourceList) {
+		for (AutoCloseable resource : resourceList) {
+			if (resource != null) {
+				try {
+					resource.close();
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
-				if (br != null) {
-					br.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
 			}
 		}
 	}

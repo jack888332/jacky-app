@@ -21,6 +21,7 @@ public class Example1 {
 			}
 		}).start();
 
+		// 此为类实例创建表达式
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
