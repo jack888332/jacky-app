@@ -1,4 +1,4 @@
-package demo.excel;
+package demo.handler_of_format_file;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -23,10 +23,10 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.ss.util.WorkbookUtil;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelHandler {
+public class ExcelHandlerByPOI {
 
 	public static void main(String[] args) throws IOException {
-		ExcelHandler eh = new ExcelHandler();
+		ExcelHandlerByPOI eh = new ExcelHandlerByPOI();
 		eh.editExcelByPattern1();
 	}
 
@@ -118,7 +118,6 @@ public class ExcelHandler {
 			close(wb, fs1, pkg1, pkg2, fs2, wb1, wb2, xb1, xb2);
 		}
 	}
-
 	
 	// 关闭资源
 	private static void close(AutoCloseable... resourceList) {

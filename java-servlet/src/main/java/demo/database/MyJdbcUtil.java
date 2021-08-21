@@ -1,4 +1,4 @@
-package demo.jdbc;
+package demo.database;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;

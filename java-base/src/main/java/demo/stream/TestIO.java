@@ -4,33 +4,41 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
+import java.net.URL;
 import java.nio.charset.Charset;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class TestIO {
-	
+
 	static Class<?> pointerToClass;
-	
+
 	public static void main(String[] args) throws Exception {
 		init();
-		
-		long s = System.currentTimeMillis();
-		copyFileByByteStream("D:\\source.jpg", "D:\\target.jpg");
-		long e = System.currentTimeMillis();
-		System.out.println("字节流传输毫秒数：" + (e - s));
+		URL url = Thread.currentThread().getContextClassLoader().getResource("ModifyFileNamesInBulk.bat");
+		File file = new File(url.toURI());
+		String command = StringUtils.joinWith(" ", "cmd /k start /d", file.getParent(), file.getName());
+		Runtime.getRuntime().exec(command);
 
-		s = System.currentTimeMillis();
-		copyFileByCharStream("D:\\source.txt", "D:\\target.txt");
-		e = System.currentTimeMillis();
-		System.out.println("字符流传输毫秒数：" + (e - s));
+//		long s = System.currentTimeMillis();
+//		copyFileByByteStream("D:\\source.jpg", "D:\\target.jpg");
+//		long e = System.currentTimeMillis();
+//		System.out.println("字节流传输毫秒数：" + (e - s));
+
+//		s = System.currentTimeMillis();
+//		copyFileByCharStream("D:\\source.txt", "D:\\target.txt");
+//		e = System.currentTimeMillis();
+//		System.out.println("字符流传输毫秒数：" + (e - s));
 
 	}
-	
+
 	public static void init() throws Exception {
 		// 通过类加载器反射类
 		pointerToClass = Class.forName("sun.nio.cs.UTF_8");
@@ -59,8 +67,8 @@ public class TestIO {
 		BufferedWriter bw = null;
 		try {
 			Constructor<?> constructor = pointerToClass.getConstructor();
-			Charset charset = (Charset)constructor.newInstance();
-			
+			Charset charset = (Charset) constructor.newInstance();
+
 			br = new BufferedReader(new FileReader(sourcePath, charset));
 			bw = new BufferedWriter(new FileWriter(targetPath, true));
 			char[] chars = new char[1024];
@@ -74,7 +82,7 @@ public class TestIO {
 			close(bw, br);
 		}
 	}
-	
+
 	// 关闭资源
 	private static void close(AutoCloseable... resourceList) {
 		for (AutoCloseable resource : resourceList) {
