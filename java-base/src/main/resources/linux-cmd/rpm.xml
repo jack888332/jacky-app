@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<command id="rpm" usage="rpm [potion...]">
+	<option id="--query" abbr="-q">
+		查询...
+	</option>
+	<option id="--verify" abbr="-V">
+		验证已安装的RPM
+		如果没检察出问题来,将不会得到任何回应,此选项仅报告问题
+		<output>
+			<refer>
+				SM5....T c /usr/share/info/dir
+				.......T c /etc/krb5.conf
+				.......T /usr/share/pixmaps/gnome-warning.png
+				S.5....T c /etc/sysconfig/pcmcia
+				.....U.. /dev/winradio0
+				<explain form="代码：含义">
+					S：文件大小不同
+					M：文件模式不同
+					5：MD5校验和不同
+					D：设备文件上的主要和次要版本号不同
+					L：链接中发生不匹配
+					U：文件所有权不同
+					G：文件组所有者不同
+					T；文件时间不同
+				</explain>
+			</refer>
+		</output>
+	</option>
+
+	<options remark="跟随--query/--verify,查询/验证符合条件的包">
+		<option id="--all" abbr="-a">
+			查询/验证所有包
+		</option>
+		<option id="--file" abbr="-f">
+			查询/验证拥有某文件的包
+			<refer>rpm -qf FILE_NAME</refer>
+		</option>
+		<option id="--group" abbr="-g">
+			查询/验证某组中的包
+			<refer>rpm -qg GROUP_NAME</refer>
+		</option>
+		<option id="--package" abbr="-p">
+			查询/验证某包
+		</option>
+		<option id="--pkgid">
+			使用包标识符查询/验证包
+		</option>
+		<option id="--hdrid">
+			使用标头标识符查询/验证包
+		</option>
+		<option id="--triggeredby">
+			查询包触发的包
+		</option>
+		<option id="--whatconflicts">
+			查询/验证冲突的包
+		</option>
+		<option id="--whatrequires">
+			查询/验证需要依赖项的包
+		</option>
+		<option id="--whatobsoletes">
+			查询/验证废弃依赖项的包
+		</option>
+		<option id="--whatprovides">
+			查询/验证提供依赖项的包
+		</option>
+		<option id="--whatrecommends">
+			查询/验证推荐依赖项的包
+		</option>
+		<option id="--whatsuggests">
+			查询/验证建议依赖项的包
+		</option>
+		<option id="--whatsupplements">
+			查询/验证补充依赖项的包
+		</option>
+		<option id="--whatenhances">
+			查询/验证增强依赖项的包
+		</option>
+		<option id="--nomanifest">
+			不要将非包文件作为清单处理
+		</option>
+	</options>
+
+	<options remark="跟随--query,查询包内文件">
+		<option id="--configfiles" abbr="-c">
+			列出所有配置文件
+			<refer>rpm -qc RPM</refer>
+		</option>
+		<option id="--docfiles" abbr="-d">
+			列出所有文档文件
+			<refer>rpm -qd RPM</refer>
+		</option>
+		<option id="--licensefiles" abbr="-L">
+			列出所有许可证文件
+			<refer>rpm -qL RPM</refer>
+		</option>
+		<option id="--artifactfiles" abbr="-A">
+			列出所有工件文件
+			<refer>rpm -qA RPM</refer>
+		</option>
+		<option id="--dump">
+			转储基本文件信息
+		</option>
+		<option id="--list" abbr="-l">
+			列出包中的文件
+		</option>
+		<option id="--queryformat">
+			使用某查询格式
+			<refer doc="http://rpm.org/user_doc/query_format.html">
+				rpm -qa --queryformat "%{NAME} %{SIZE}\n"
+				rpm -qa --queryformat "%-30{NAME} %10{SIZE}\n"
+				rpm -q --queryformat "[%-50{FILENAMES} %10{FILESIZES}\n]" "RPM-file"
+				rpm --queryformat "[%{=NAME} %{FILENAMES}\n]" "RPM-file"
+				rpm -qa --queryformat "%|SOMETAG?{present}:{missing}|"
+			</refer>
+		</option>
+		<option id="--state" abbr="-s">
+			显示列出文件的状态
+		</option>
+	</options>
+
+	<options remark="跟随--verify">
+		<option id="--nofiledigest">
+			不验证文件摘要
+			<refer></refer>
+		</option>
+		<option id="--nofiles">
+			不验证包中的文件
+		</option>
+		<option id="--nodeps">
+			不验证包依赖项
+		</option>
+		<option id="--noscript">
+			不执行验证脚本
+		</option>
+	</options>
+
+	<options remark="安装/升级/擦除">
+		<option id="--allfiles">
+			安装所有文件，甚至可能被跳过的配置
+		</option>
+		<option id="--allmatches">
+			删除所有与 {PACKAGE} 匹配的包（如果 {PACKAGE} 指定多个包，通常会产生错误）
+			--allmatches 选项告诉 rpm 命令删除那些名称与您在命令行中传递的名称相匹配的所有包。
+			如果您不使用 --allmatches 选项，则当多个包与您在命令行上传递的名称或名称相匹配时，rpm 命令将发出错误消息。
+		</option>
+		<option id="--badreloc">
+			重定位 non-relocatable 包中的文件
+		</option>
+		<option id="--erase={PACKAGE}+" abbr="-e">
+			擦除（卸载）包
+		</option>
+		<option id="--excludedocs">
+			不安装文档
+		</option>
+		<option id="--excludepath={path}">
+			跳过带有前导组件 {path} 的文件
+		</option>
+		<option id="--force">
+			--replacepkgs --replacefiles 的简写
+		</option>
+		<option id="--freshen={packagefile}+" abbr="-F">
+			升级包（如果已经安装）
+		</option>
+		<option id="--hash" abbr="-h">
+			在软件包安装时打印哈希标记（与 -v 配合使用）
+		</option>
+		<option id="--ignorearch">
+			不验证包架构
+		</option>
+		<option id="--ignoreos">
+			不验证软件包操作系统
+		</option>
+		<option id="--ignoresize">
+			安装前不要检查磁盘空间
+		</option>
+		<option id="--noverify">
+			--ignorepayload --ignoresignature 的简写
+		</option>
+		<option id="--install" abbr="-i">
+			安装包
+		</option>
+		<option id="--justdb">
+			更新数据库，但不要修改文件系统
+		</option>
+		<option id="--nodeps">
+			不验证包依赖
+		</option>
+		<option id="--nofiledigest">
+			不验证文件摘要
+		</option>
+		<option id="--nocontexts">
+			不要安装文件安全上下文
+		</option>
+		<option id="--nocaps">
+			不要安装文件功能
+		</option>
+		<option id="--noorder">
+			不要重新排序软件包安装以满足依赖关系
+		</option>
+		<option id="--noscripts">
+			不执行包脚本
+		</option>
+		<option id="--notriggers">
+			不执行此包触发的任何 scriptlet
+		</option>
+		<option id="--oldpackage">
+			升级到旧版本的软件包（升级时的 --force 会自动执行此操作）
+		</option>
+		<option id="--percent">
+			在安装包时打印百分比
+		</option>
+		<option id="--prefix={dir}">
+			如果可重定位，则将包重定位到 {dir}
+		</option>
+		<option id="--relocate={old}={new}">
+			将文件从路径 {old} 重定位到 {new}
+		</option>
+		<option id="--replacefiles">
+			忽略包之间的文件冲突
+		</option>
+		<option id="--replacepkgs">
+			如果软件包已经存在，请重新安装
+		</option>
+		<option id="--test">
+			不安装，但告诉它是否可以工作
+		</option>
+		<option id="--upgrade={packagefile}+" abbr="-U">
+			升级包
+		</option>
+		<option id="--reinstall={packagefile}+">
+			重新安装软件包
+		</option>
+	</options>
+
+	<options remark="所有 rpm 模式（查询/验证/安装/升级/擦除）和可执行文件的通用选项">
+		<option id="--define='MACRO EXPR'" abbr="-D">
+			用值 EXPR 定义 MACRO
+		</option>
+		<option id="--undefine=MACRO">
+			取消定义宏
+		</option>
+		<option id="--eval='EXPR'" abbr="-E">
+			打印 EXPR 的宏扩展
+		</option>
+		<option id="--target=CPU-VENDOR-OS">
+			指定目标平台
+		</option>
+		<option id="--macros={FILE:...}">
+			读取 {FILE:...} 而不是默认文件
+		</option>
+		<option id="--noplugins">
+			不要启用任何插件
+		</option>
+		<option id="--nodigest">
+			不验证包摘要
+		</option>
+		<option id="--nosignature">
+			不验证包签名
+		</option>
+		<option id="--rcfile={FILE:...}">
+			读取 {FILE:...} 而不是默认文件
+		</option>
+		<option id="--root=ROOT" abbr="r">
+			使用 ROOT 作为顶级目录（默认：“/”）
+		</option>
+		<option id="--dbpath=DIRECTORY" abbr="r">
+			使用目录中的数据库
+		</option>
+		<option id="--querytags">
+			显示已知查询标签
+		</option>
+		<option id="--showrc">
+			显示最终的 rpmrc 和宏配置
+		</option>
+		<option id="--verbose" abbr="-v">
+			提供更详细的输出
+		</option>
+		<option id="--version">
+			打印正在使用的 rpm 版本
+		</option>
+	</options>
+
+	<options remark="通过 popt alias/exec 实现的选项">
+		<option id="--scripts">
+			列出安装/删除包中的脚本
+		</option>
+		<option id="--setperms">
+			设置包中文件的权限
+		</option>
+		<option id="--setugids">
+			设置包中文件的用户/组所有权
+		</option>
+		<option id="--setcaps">
+			设置包中文件的功能
+		</option>
+		<option id="--restore">
+			恢复文件/目录权限
+		</option>
+		<option id="--conflicts">
+			列出此包冲突的功能
+		</option>
+		<option id="--obsoletes">
+			列出安装这个包删除的其他包
+		</option>
+		<option id="--obsoletes">
+			列出安装这个包删除的其他包
+		</option>
+		<option id="--provides">
+			列出包提供的功能
+		</option>
+		<option id="--requires">
+			列出包所需的功能
+		</option>
+		<option id="--recommends">
+			列出由包推荐的功能
+		</option>
+		<option id="--suggests">
+			列出由包建议的功能
+		</option>
+		<option id="--supplements">
+			列出由包补充的功能
+		</option>
+		<option id="--enhances">
+			列出由包增强的功能
+		</option>
+		<option id="--info">
+			列出包中的描述性信息
+		</option>
+		<option id="--changelog">
+			列出此包的更改日志
+		</option>
+		<option id="--changes">
+			用完整的时间戳列出此包的更改
+		</option>
+		<option id="--xml">
+			列出 xml 中的元数据
+		</option>
+		<option id="--triggers">
+			列出包中的触发器小脚本
+		</option>
+		<option id="--filetriggers">
+			列出包中的文件触发器小脚本
+		</option>
+		<option id="--last">
+			按安装时间列出软件包，最近的排在最前面
+		</option>
+		<option id="--dupes">
+			列出重复的包
+		</option>
+		<option id="--filesbypkg">
+			列出每个包中的所有文件
+		</option>
+		<option id="--fileclass">
+			列出文件名及其类
+		</option>
+		<option id="--filecolor">
+			列出文件名及其颜色
+		</option>
+		<option id="--fileprovide">
+			列出文件名及其提供项
+		</option>
+		<option id="--filerequire">
+			列出文件名及需求项
+		</option>
+		<option id="--filecaps">
+			列出文件名及其 POSIX1.e 功能
+		</option>
+	</options>
+</command>

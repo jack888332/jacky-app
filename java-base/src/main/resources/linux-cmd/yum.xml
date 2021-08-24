@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<command id="yum" usage="yum [options] command">
+	<commands tag="main">
+		<command id="alias">
+			列出或创建命令别名
+		</command>
+		<command id="autoremove">
+			删除最初作为依赖项安装的所有不需要的包
+		</command>
+		<command id="check">
+			检查 packagedb 中的问题
+		</command>
+		<command id="check-update">
+			检查可用的软件包升级
+		</command>
+		<command id="makecache">
+			生成元数据缓存
+		</command>
+		<command id="clean">
+			清除缓存数据
+		</command>
+		<command id="deplist">
+			列出包的依赖项以及提供它们的包
+		</command>
+		<command id="distro-sync">
+			将安装的软件包同步到最新的可用版本
+		</command>
+		<command id="downgrade">
+			降级软件包
+		</command>
+		<command id="group">
+			显示或使用组信息
+			<options>
+				<option id="--with-optional" />
+				<option id="--hidden" />
+				<option id="--installed" />
+				<option id="--available" />
+				<option id="--ids" />
+			</options>
+			<commands>
+				<command id="summary [GROUP]" default="y" />
+				<command id="list [GROUP]" />
+				<command id="info [GROUP]" />
+				<command id="install [GROUP]" />
+				<command id="upgrade [GROUP]" />
+				<command id="mark [GROUP]" />
+			</commands>
+			<demo>yum --disablerepo "baidu.com" group --available list</demo>
+		</command>
+		<command id="help">
+			显示有用的使用消息
+		</command>
+		<command id="history">
+			显示或使用交易历史
+		</command>
+		<command id="info" usage="info [option] PACKAGE">
+			显示有关一个包或一组包的详细信息
+			<options>
+				<option id="--all" />
+				<option id="--available" />
+				<option id="--installed" />
+				<option id="--extras" />
+				<option id="--updates" />
+				<option id="--upgrades" />
+				<option id="--autoremove" />
+				<option id="--recent" />
+			</options>
+		</command>
+		<command id="install" often="y">
+			在您的系统上安装一个或多个软件包
+		</command>
+		<command id="list" usage="list [option] PACKAGE">
+			列出一个包或一组包
+			<options>
+				<option id="--all" />
+				<option id="--available" />
+				<option id="--installed" />
+				<option id="--extras" />
+				<option id="--updates" />
+				<option id="--upgrades" />
+				<option id="--autoremove" />
+				<option id="--recent" />
+			</options>
+		</command>
+		<command id="mark">
+			标记或取消标记已安装的软件包为用户安装
+		</command>
+		<command id="module">
+			模块与模块交互
+		</command>
+		<command id="provides">
+			查找提供给定值的包
+		</command>
+		<command id="reinstall">
+			重新安装一个包
+		</command>
+		<command id="remove [option] PACKAGE">
+			从系统中删除一个或多个包
+			<options>
+				<option id="--duplicates" />
+				<option id="--oldinstallonly" />
+			</options>
+		</command>
+		<command id="repolist [option] REPOSITORY">
+			显示配置的软件仓库
+			<options>
+				<option id="--all" />
+				<option id="--enabled" />
+				<option id="--disabled" />
+			</options>
+		</command>
+		<command id="repoquery">
+			搜索匹配关键字的包
+		</command>
+		<command id="repository-packages">
+			在给定存储库中的所有包之上运行命令
+		</command>
+		<command id="search" often="y">
+			搜索给定字符串的包详细信息
+		</command>
+		<command id="shell">
+			运行交互式 YUM shell
+		</command>
+		<command id="swap">
+			运行交互式 YUM mod 以删除和安装一个规范
+		</command>
+		<command id="updateinfo">
+			显示有关软件包的建议
+		</command>
+		<command id="upgrade">
+			升级系统上的一个或多个软件包
+		</command>
+		<command id="upgrade-minimal">
+			升级，但只有“最新”的软件包匹配才能修复影响您系统的问题
+		</command>
+	</commands>
+
+	<commands tag="plugin">
+		<command id="builddep">
+			为包或规范文件安装构建依赖项
+		</command>
+		<command id="changelog">
+			显示包的变更日志数据
+		</command>
+		<command id="config-manager">
+			管理 yum 配置选项和存储库
+			<options>
+				<option id="--save">
+					保存当前选项（与 --setopt 一起使用）
+				</option>
+				<option id="--add-repo URL">
+					从指定的文件或 url 添加（并启用）存储库
+				</option>
+				<option id="--dump">
+					将当前配置值打印到标准输出
+				</option>
+				<option id="--dump-variables">
+					将变量值打印到标准输出
+				</option>
+				<option id="--set-enabled">
+					启用存储库（自动保存）
+				</option>
+				<option id="--set-disabled">
+					禁用存储库（自动保存）
+				</option>
+			</options>
+		</command>
+		<command id="copr">
+			与 Copr 存储库交互
+		</command>
+		<command id="debug-dump">
+			将有关已安装 rpm 包的信息转储到文件
+		</command>
+		<command id="debug-restore">
+			恢复记录在调试转储文件中的包
+		</command>
+		<command id="debuginfo-install">
+			安装调试信息包
+		</command>
+		<command id="download">
+			下载包到当前目录
+		</command>
+		<command id="needs-restarting">
+			确定需要重新启动的更新二进制文件
+		</command>
+		<command id="playground">
+			与 Playground 存储库交互
+		</command>
+		<command id="repoclosure">
+			显示存储库未解析的依赖项列表
+		</command>
+		<command id="repodiff">
+			列出两组存储库之间的差异
+		</command>
+		<command id="repograph">
+			以点格式输出完整的包依赖图
+		</command>
+		<command id="repomanage">
+			管理 rpm 包目录
+		</command>
+		<command id="reposync">
+			从远程仓库下载所有包
+		</command>
+	</commands>
+
+	<options>
+		<option id="--config [config file]" abbr="-c [config file]">
+			配置文件位置
+		</option>
+		<option id="--quiet" abbr="-q">
+			静默操作
+		</option>
+		<option id="--verbose" abbr="-v">
+			详细操作
+		</option>
+		<option id="--version">
+			显示 YUM 版本并退出
+		</option>
+		<option id="--installroot [path]">
+			设置安装根目录
+		</option>
+		<option id="--nodocs">
+			不安装文档
+		</option>
+		<option id="--noplugins">
+			禁用所有插件
+		</option>
+		<option id="--enableplugin [plugin]">
+			按名称启用插件
+		</option>
+		<option id="--disableplugin [plugin]">
+			按名称禁用插件
+		</option>
+		<option id="--releasever RELEASEVER">
+			覆盖 config 和 repo 文件中 $releasever 的值
+		</option>
+		<option id="--setopt SETOPTS">
+			设置任意配置和回购选项
+		</option>
+		<option id="--skip-broken">
+			通过跳过包来解决 depsolve 问题
+		</option>
+		<option id="--help" abbr="-h">
+			显示命令帮助
+		</option>
+		<option id="--allowerasing">
+			允许擦除已安装的软件包以解决依赖
+		</option>
+		<option id="--best" abbr="-b">
+			在交易中尝试最好的可用软件包版本
+		</option>
+		<option id="--nobest">
+			不要将交易限制在最佳人选
+		</option>
+		<option id="--cacheonly" abbr="-C">
+			完全从系统缓存运行，不要更新缓存
+		</option>
+		<option id="--randomwait [minutes]" abbr="-R [minutes]">
+			最大的命令等待时间
+		</option>
+		<option id="--debuglevel [debug level]" abbr="-d [debug level]">
+			调试输出级别
+		</option>
+		<option id="--debugsolver">
+			将详细的求解结果转储到文件中
+		</option>
+		<option id="--showduplicates">
+			在存储库中，在 list/search 命令中显示重复项
+		</option>
+		<option id="--errorlevel ERRORLEVEL" abbr="-e ERRORLEVEL">
+			错误输出级别
+		</option>
+		<option id="--obsoletes">
+			启用 yum 的过时处理逻辑，用于升级或显示包在信息、列表和 repoquery 方面过时的功能
+		</option>
+		<option id="--rpmverbosity [debug level name]">
+			rpm 的调试输出级别
+		</option>
+		<option id="--assumeyes" abbr="-y">
+			对所有问题自动回答：是
+		</option>
+		<option id="--assumeno">
+			对所有问题自动回答：否
+		</option>
+		<option id="--enablerepo [repo]">
+			启用其他存储库。列表选项。支持 globs，可以多次指定。
+		</option>
+		<option id="--disablerepo [repo]">
+			禁用存储库。列表选项。支持 globs，可以多次指定。
+			<demo>yum --disablerepo "baidu.com" list</demo>
+		</option>
+		<option id="--repoid [repo]" abbr="--repo [repo]">
+			仅通过 id 或 glob 启用特定存储库，可以多次指定
+		</option>
+		<option id="--enable">
+			使用 config-manager 命令启用 repos（自动保存）
+		</option>
+		<option id="--disable">
+			使用 config-manager 命令禁用 repos（自动保存）
+		</option>
+		<option id="--exclude [package]" abbr="-x [package]">
+			按名称或全局排除包
+		</option>
+		<option id="--disableexcludes [repo], --disableexcludepkgs [repo]">
+			禁用 excludepkgs
+		</option>
+		<option id="--repofrompath [repo,path]">
+			要使用的附加存储库的标签和路径（与 baseurl 中的路径相同），可以多次指定。
+		</option>
+		<option id="--noautoremove">
+			禁用不再使用的依赖项的删除
+		</option>
+		<option id="--nogpgcheck">
+			禁用 gpg 签名检查（如果 RPM 策略允许）
+		</option>
+		<option id="--color COLOR">
+			控制是否使用颜色
+		</option>
+		<option id="--refresh">
+			在运行命令之前将元数据设置为过期
+		</option>
+		<option id="-4">
+			仅解析为 IPv4 地址
+		</option>
+		<option id="-6">
+			仅解析为 IPv6 地址
+		</option>
+		<option id="--destdir DESTDIR, --downloaddir DESTDIR">
+			设置目录以将包复制到
+		</option>
+		<option id="--downloadonly">
+			只下载包
+		</option>
+		<option id="--comment COMMENT">
+			为交易添加评论
+		</option>
+		<option id="--bugfix">
+			在更新项中,包含与“错误修复”有关的包
+		</option>
+		<option id="--enhancement">
+			在更新项中,包含与“增强”有关的包
+		</option>
+		<option id="--newpackage">
+			在更新项中,包含与“新包”有关的包
+		</option>
+		<option id="--security">
+			在更新项中,包含与“安全”有关的包
+		</option>
+		<option id="--advisory ADVISORY, --advisories ADVISORY">
+			在更新项中，包含修复给定建议所需的包
+		</option>
+		<option id="--bz BUGZILLA, --bzs BUGZILLA">
+			在更新项中，包含修复给定 BZ 所需的包
+		</option>
+		<option id="--cve CVES, --cves CVES">
+			在更新项中，包含修复给定 CVE 所需的包
+		</option>
+		<option id="--sec-severity {Critical,Important,Moderate,Low}">
+			在更新项中，包含与“安全”有关的包（匹配严重性）
+		</option>
+		<option id="--forcearch ARCH">
+			强制使用架构
+		</option>
+	</options>
+</command>
