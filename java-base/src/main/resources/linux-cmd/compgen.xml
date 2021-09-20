@@ -1,0 +1,104 @@
+<command id="compgen">
+	<usage>
+		compgen [-abcdefgjksuv]
+		[-o option] [-A action] [-C command] [-F function] [-G globpat]
+		[-P prefix] [-S suffix] [-X filterpat] [-W wordlist] [word]
+	</usage>
+	<option id="-o comp-option">
+		用于控制 compspec 的几方面行为。
+		<values of="comp-option">
+			<value name="bashdefault">
+				如果 compspec 未生成匹配项，则执行其余的默认 Bash 补全项。
+			</value>
+			<value name="default">
+				如果 compspec 未生成匹配项，则使用 Readline 的默认文件名补全。
+			</value>
+			<value name="dirnames">
+				如果 compspec 未生成匹配项，则执行目录名称补全。
+			</value>
+			<value name="filenames">
+				告诉 Readline compspec 生成文件名，因此它可以执行任何特定于文件名的处理。
+				例如：向目录名添加斜杠、引用特殊字符或抑制尾随空格。
+				此选项旨在与 -F 指定的 shell 函数一起使用。
+			</value>
+			<value name="noquote">
+				告诉 Readline 不要引用完整的单词，如果它们是文件名。
+			</value>
+			<value name="nosort">
+				告诉 Readline 不要按字母顺序对可能的补全列表进行排序。
+			</value>
+			<value name="nospace">
+				告诉 Readline 不要在行尾补全的单词后附加空格。
+			</value>
+			<value name="plusdirs">
+				在生成由 compspec 定义的任何匹配项后，将尝试补全目录名并将所有匹配项添加到其他操作的结果中。
+			</value>
+		</values>
+	</option>
+	<option id="-A action">
+		用于生成可能的补全列表。
+		<values of="action">
+			<value name="alias" abbr="-a" />
+			<value name="arrayvar" />
+			<value name="binding" />
+			<value name="builtin" abbr="-b" />
+			<value name="command" abbr="-c" />
+			<value name="directory" abbr="-d" />
+			<value name="disabled" />
+			<value name="enabled" />
+			<value name="export" abbr="-e" />
+			<value name="file" abbr="-f" />
+			<value name="function" />
+			<value name="group" abbr="-g" />
+			<value name="helptopic" />
+			<value name="hostname" />
+			<value name="job" abbr="-j" />
+			<value name="keyword" abbr="-k" />
+			<value name="running" />
+			<value name="service" abbr="-s" />
+			<value name="setopt">
+				set 内置命令的 -o 选项的有效参数
+			</value>
+			<value name="shopt">
+				shopt 内置程序接受的 Shell 选项名称
+			</value>
+			<value name="signal" />
+			<value name="stopped" />
+			<value name="user" abbr="-u" />
+			<value name="variable" abbr="-v" />
+		</values>
+	</option>
+	<option id="-C command">
+		命令在子shell环境中执行，其输出用作可能的补全项。
+	</option>
+	<option id="-F function">
+		shell函数在当前shell环境中执行。
+		执行时，$1 是其参数正在补全的命令的名称，$2 是正在补全的单词，$3 是正在补全的单词之前的单词，
+		当它补全时，从 COMPREPLY 数组变量的值中检索可能的补全。
+	</option>
+	<option id="-G globpat">
+		文件名扩展模式 globpat 被扩展以生成可能的补全。
+	</option>
+	<option id="-P prefix">
+		在应用所有其他选项后，在每个可能的补全项的开头添加前缀。
+	</option>
+	<option id="-S suffix">
+		在应用所有其他选项后，在每个可能的补全项的开头添加前缀。
+	</option>
+	<option id="-W wordlist">
+		使用 IFS 特殊变量中的字符作为分隔符拆分词表，并扩展每个结果词。
+		可能的补全是与正在补全的单词相匹配的结果列表的成员。
+	</option>
+	<option id="-X filterpat">
+		filterpat 是一种用于文件名扩展的模式。
+		它应用于由前面的选项和参数生成的可能补全列表，
+		并且从列表中删除每个匹配 filterpat 的补全。
+		filterpat 中的前导 ‘!’ 否定该模式；在这种情况下，任何与 filterpat 不匹配的补全都会被删除。
+	</option>
+
+	根据选项，生成可能的补全项（匹配于 word），可以是除 -p 和 -r 之外的 complete 内置接受的任何选项，并将匹配写入标准输出。
+	使用 -F 或 -C 选项时，由可编程完成工具设置的各种 shell 变量虽然可用，但没有有用的值。
+	匹配的生成方式与可编程完成代码直接从具有相同标志的完成规范生成它们的方式相同。
+	如果指定了单词，则仅显示匹配单词的那些补全。
+	除非提供了无效选项或未生成匹配项，否则返回值为 true。
+</command>

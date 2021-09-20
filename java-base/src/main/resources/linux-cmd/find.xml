@@ -1,0 +1,10 @@
+<command id="find [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression]">
+	<description>
+		GNU find 根据优先级规则，从左到右计算给定的表达式，搜索以每个给定起点为根的目录树，直到获得结果（左侧，对于“与操作”为假，对于“或操作”为真)，此时 find 移动到下一个文件名。如果没有指定起始点，则'.'被假设。
+	</description>
+
+	<options>
+
+	</options>
+
+</command>

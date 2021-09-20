@@ -1,0 +1,154 @@
+<command id="grep" usage="grep [OPTION]... PATTERN [FILE]...">
+	<options title="PATTERN 的选择与设置">
+		<option id="--extended-regexp" abbr="-E">
+			PATTERN 是一个扩展的正则表达式
+		</option>
+		<option id="--fixed-strings" abbr="-F">
+			PATTERN 是一组换行符分隔的字符串
+		</option>
+		<option id="--basic-regexp" abbr="-G" default="y">
+			PATTERN 是一个基本的正则表达式（默认）
+		</option>
+		<option id="--perl-regexp" abbr="-P">
+			PATTERN 是一个 Perl 正则表达式
+		</option>
+		<option id="--regexp=PATTERN" abbr="-e">
+			使用 PATTERN 进行匹配
+		</option>
+		<option id="--file=FILE" abbr="-f">
+			从文件中获取模式
+		</option>
+		<option id="--ignore-case" abbr="-i">
+			忽略大小写区别
+		</option>
+		<option id="--word-regexp" abbr="-w">
+			强制 PATTERN 只匹配整个单词
+		</option>
+		<option id="--line-regexp" abbr="-x">
+			强制 PATTERN 只匹配整行
+		</option>
+		<option id="--null-data" abbr="-z">
+			数据行以 0 字节结尾，而不是换行符
+		</option>
+	</options>
+
+	<options title="杂项">
+		<option id="--no-messages" abbr="-s">
+			抑制错误信息
+		</option>
+		<option id="--invert-match" abbr="-v">
+			选择不匹配的行
+		</option>
+	</options>
+
+	<options title="输出控制">
+		<option id="--max-count=NUM" abbr="-m">
+			在 NUM 选定行后停止
+		</option>
+		<option id="--byte-offset" abbr="-b">
+			用输出行打印字节偏移量
+		</option>
+		<option id="--line-number" abbr="-n">
+			用输出行打印行号
+		</option>
+		<option id="--line-buffered">
+			刷新每一行的输出
+		</option>
+		<option id="--with-filename" abbr="-H">
+			用输出行打印文件名
+		</option>
+		<option id="--no-filename" abbr="-h">
+			禁止输出的文件名前缀
+		</option>
+		<option id="--label=LABEL">
+			使用 LABEL 作为标准输入文件名前缀
+		</option>
+		<option id="--only-matching" abbr="-o">
+			仅显示与 PATTERN 匹配的行的一部分
+		</option>
+		<option id="--quiet" abbr="-q">
+			抑制所有正常输出
+		</option>
+		<option id="--binary-files=TYPE">
+			假设二进制文件是 TYPE
+			TYPE：binary、text、without-match
+		</option>
+		<option id="--text" abbr="-a">
+			相当于 --binary-files=text
+		</option>
+		<option abbr="-I">
+			相当于 --binary-files=without-match
+		</option>
+		<option id="--directories=ACTION" abbr="-d">
+			如何处理目录
+			ACTION：read、recurse、skip
+		</option>
+		<option id="--devices=ACTION" abbr="-D">
+			如何处理设备、FIFO 和套接字
+			ACTION：read、skip
+		</option>
+		<option id="--recursive" abbr="-r">
+			类似 --directories=recurse
+		</option>
+		<option id="--dereference-recursive" abbr="-R">
+			同样，但遵循所有符号链接
+		</option>
+		<option id="--include=FILE_PATTERN">
+			只搜索匹配 FILE_PATTERN 的文件
+		</option>
+		<option id="--exclude=FILE_PATTERN">
+			跳过与 FILE_PATTERN 匹配的文件和目录
+		</option>
+		<option id="--exclude-from=FILE">
+			跳过与 FILE 中的任何文件模式匹配的文件
+		</option>
+		<option id="--exclude-dir=PATTERN">
+			匹配 PATTERN 的目录将被跳过
+		</option>
+		<option id="--files-without-match" abbr="-L">
+			仅打印没有选定行的文件名
+		</option>
+		<option id="--files-with-matches" abbr="-l">
+			仅打印具有选定行的文件名
+		</option>
+		<option id="--count" abbr="-c">
+			仅打印每个 FILE 选定行的计数
+		</option>
+		<option id="--initial-tab" abbr="-T">
+			使标签对齐（如果需要）
+		</option>
+		<option id="--null" abbr="-Z">
+			在文件名后打印 0 字节
+		</option>
+	</options>
+
+	<options title="上下文控制">
+		<option id="--before-context=NUM" abbr="-B">
+			打印 NUM 行前导上下文
+		</option>
+		<option id="--after-context=NUM" abbr="-A">
+			打印 NUM 行尾随上下文
+		</option>
+		<option id="--context=NUM" abbr="-C,-NUM">
+			打印 NUM 行输出上下文
+		</option>
+		<option id="--group-separator=SEP">
+			使用 SEP 作为组分隔符
+		</option>
+		<option id="--no-group-separator">
+			使用空字符串作为组分隔符
+		</option>
+		<option id="--color[=WHEN]">
+			使用标记突出显示匹配的字符串
+			WHEN is 'always', 'never', or 'auto'
+		</option>
+		<option id="--binary" abbr="-U">
+			不要在 EOL 时删除 CR 字符 (MSDOS/Windows)
+		</option>
+	</options>
+
+	<case>
+		<!-- 在menu.h，main.c中搜索'hello world'，区分大小写 -->
+		grep -i 'hello world' menu.h main.c  
+	</case>
+</command>

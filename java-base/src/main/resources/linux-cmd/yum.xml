@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <command id="yum" usage="yum [options] command">
+	<demo>
+		<![CDATA[yum --disablerepo=\* --enablerepo='mysql*-community*' list available]]>
+	</demo>
+
 	<commands tag="main">
 		<command id="alias">
 			列出或创建命令别名
@@ -54,7 +58,7 @@
 		<command id="history">
 			显示或使用交易历史
 		</command>
-		<command id="info" usage="info [option] PACKAGE">
+		<command id="info [option] PACKAGE">
 			显示有关一个包或一组包的详细信息
 			<options>
 				<option id="--all" />
@@ -67,10 +71,10 @@
 				<option id="--recent" />
 			</options>
 		</command>
-		<command id="install" often="y">
+		<command id="install PACKAGE">
 			在您的系统上安装一个或多个软件包
 		</command>
-		<command id="list" usage="list [option] PACKAGE">
+		<command id="list [option] PACKAGE">
 			列出一个包或一组包
 			<options>
 				<option id="--all" />
@@ -204,7 +208,7 @@
 		</command>
 	</commands>
 
-	<options>
+	<options remark="多数选项为子命令服务">
 		<option id="--config [config file]" abbr="-c [config file]">
 			配置文件位置
 		</option>
@@ -243,18 +247,23 @@
 		</option>
 		<option id="--help" abbr="-h">
 			显示命令帮助
+			<demo><![CDATA[yum --help | grep "install"]]></demo>
 		</option>
 		<option id="--allowerasing">
 			允许擦除已安装的软件包以解决依赖
 		</option>
 		<option id="--best" abbr="-b">
-			在交易中尝试最好的可用软件包版本
+			在事务中尝试最好的可用软件包版本。
+			特别是在 dnf 升级期间，默认情况下会跳过由于依赖性原因无法安装的更新，该开关强制 DNF 只考虑最新的包。
+			当遇到依赖项损坏的包时，DNF 将失败并给出无法安装最新版本的原因。
 		</option>
 		<option id="--nobest">
 			不要将交易限制在最佳人选
 		</option>
 		<option id="--cacheonly" abbr="-C">
-			完全从系统缓存运行，不要更新缓存
+			完全从系统缓存运行，不要更新缓存并使用它，即使它已过期。
+			DNF 为其执行的每个用户使用单独的缓存。root 用户的缓存称为系统缓存。
+			此开关允许普通用户对系统缓存进行只读访问，这通常比用户的更新鲜，因此他不必等待元数据同步。
 		</option>
 		<option id="--randomwait [minutes]" abbr="-R [minutes]">
 			最大的命令等待时间
@@ -284,7 +293,7 @@
 			对所有问题自动回答：否
 		</option>
 		<option id="--enablerepo [repo]">
-			启用其他存储库。列表选项。支持 globs，可以多次指定。
+			启用存储库。列表选项。支持 globs，可以多次指定。
 		</option>
 		<option id="--disablerepo [repo]">
 			禁用存储库。列表选项。支持 globs，可以多次指定。
@@ -315,7 +324,7 @@
 			禁用 gpg 签名检查（如果 RPM 策略允许）
 		</option>
 		<option id="--color COLOR">
-			控制是否使用颜色
+			控制是否在终端输出中使用颜色。有效值为 always、never 和 auto（默认）。
 		</option>
 		<option id="--refresh">
 			在运行命令之前将元数据设置为过期
@@ -333,7 +342,7 @@
 			只下载包
 		</option>
 		<option id="--comment COMMENT">
-			为交易添加评论
+			向事务历史添加注释。
 		</option>
 		<option id="--bugfix">
 			在更新项中,包含与“错误修复”有关的包
@@ -348,7 +357,7 @@
 			在更新项中,包含与“安全”有关的包
 		</option>
 		<option id="--advisory ADVISORY, --advisories ADVISORY">
-			在更新项中，包含修复给定建议所需的包
+			包含对应于 advisory ID 的包，例如：FEDORA-2201-123。适用于 install、repoquery、updateinfo、upgrade 命令。
 		</option>
 		<option id="--bz BUGZILLA, --bzs BUGZILLA">
 			在更新项中，包含修复给定 BZ 所需的包

@@ -32,17 +32,18 @@ public class MyJdbcUtil {
 		// CallableStatement cs;
 		// ResultSet rs;
 
-		close(statement);
-		close(session);
+		close(statement, session);
 	}
 
 	// 关闭资源
-	private static void close(AutoCloseable resource) {
-		if (resource != null) {
-			try {
-				resource.close();
-			} catch (Exception e) {
-				e.printStackTrace();
+	private static void close(AutoCloseable... resourceList) {
+		for (AutoCloseable resource : resourceList) {
+			if (resource != null) {
+				try {
+					resource.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}

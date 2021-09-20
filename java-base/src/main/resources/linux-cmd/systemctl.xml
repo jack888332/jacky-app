@@ -1,0 +1,276 @@
+<command id="systemctl [OPTIONS...] COMMAND [UNIT...]">
+	控制systemd系统和服务管理器
+	<commands tag="单元命令">
+		<command id="list-units [PATTERN...]" default="y">
+			列出 systemd 当前在内存中的单元。
+			这包括直接引用或通过依赖项引用的单元、由应用程序以编程方式固定的单元或过去处于活动状态但已失败的单元。
+			默认情况下，仅显示处于活动状态、有待处理作业或已失败的单元；这可以通过选项 --all 进行更改。
+			如果指定了一个或多个 PATTERN，则仅显示与其中之一匹配的单元。
+			如果指定了这些选项，则显示的单元还通过 --type= 和 --state= 进行过滤。
+			<output-fields>
+				LOAD 列显示负载状态，其中之一是已加载、未找到、错误设置、错误、已屏蔽。
+				ACTIVE 列显示一般单元状态，活动、重新加载、非活动、失败、激活、停用之一。
+				SUB 列显示了单元特定于单元类型的详细状态，可能的值因单元类型而异。
+				可能的 LOAD、ACTIVE 和 SUB 状态列表不是恒定的，新的 systemd 版本可能会添加和删除值。
+			</output-fields>
+			systemctl --state=help 命令可用于显示当前可能的值集。
+			<demo>systemctl --all list-units "mysql*"</demo>
+		</command>
+		<command id="list-sockets [PATTERN...]">
+			列出当前内存中的套接字单元，按监听地址排序。
+			如果指定了一个或多个 PATTERN，则仅显示与其中之一匹配的套接字单元。
+			<refer options="--show-types, --all, --state=" />
+		</command>
+		<command id="list-timers [PATTERN...]">
+			列出当前在内存中的计时器单元，按它们接下来经过的时间排序。
+			如果指定了一个或多个 PATTERN，则仅显示与其中之一匹配的单元。
+			<output-fields>
+				NEXT 显示计时器下次运行的时间。
+				LEFT 显示距离下次计时器运行的时间。
+				LAST 显示计时器上次运行的时间。
+				PASSED 显示自计时器上次运行以来已经过去了多长时间。
+				UNIT 显示定时器的名称
+				ACTIVATES 显示计时器在运行时激活的服务的名称。
+			</output-fields>
+			<refer options="--all, --state=" />
+		</command>
+		<command id="start PATTERN...">
+			启动（激活）命令行上指定的一个或多个单元。
+			全局模式对当前内存中单元的主要名称集进行操作。
+			未激活且未处于故障状态的单元通常不在内存中，并且不会与任何模式匹配。
+			在实例化单元的情况下，systemd 通常在实例启动之前不知道实例名称。
+			因此，在开始时使用 glob 模式的用处有限。
+		</command>
+		<command id="stop PATTERN...">
+			停止（解除）在命令行上指定的一个或多个单元。
+		</command>
+		<command id="reload PATTERN...">
+			要求命令行中列出的所有单元重新加载其配置。
+			这将重新加载特定于服务的配置，而不是 systemd 的单元配置文件。
+			如果您希望 systemd 重新加载单元的配置文件，请使用 daemon-reload 命令。
+			换言之：对于 Apache 的示例，这将在 Web 服务器中重新加载 Apache 的 httpd.conf，而不是 apache.service systemd 单元文件。
+		</command>
+		<command id="restart PATTERN...">
+			停止然后启动命令行上指定的一个或多个单元。如果这些单元还没有运行，它们将被启动。
+
+			使用此命令重新启动单元并不一定会在再次启动之前清除该单元的所有资源。
+			例如，只要该单元有待处理的作业，每个服务的文件描述符存储设施将保持不变，
+			参考 systemd.service 的 FileDescriptoreStoreMax=，并且仅在该单元完全停止并且不再有待处理的作业时才被清除。
+			如果打算在重新启动操作期间也刷新文件描述符存储，则应发出明确的 systemctl stop 命令，然后发出 systemctl start。
+		</command>
+		<command id="try-restart PATTERN...">
+			如果单元正在运行，则停止然后启动命令行上指定的一个或多个单元。如果单元没有运行，这没有任何作用。
+		</command>
+		<command id="reload-or-restart PATTERN...">
+			重新加载一个或多个单元，如果它们支持；不然，停止后启动它们。
+			如果这些单元还没有运行，它们将被启动。
+		</command>
+		<command id="try-reload-or-restart PATTERN...">
+			重新加载一个或多个单元，如果他们支持；不然，停止后启动它们。
+			如果单元没有运行，这将不起作用。
+		</command>
+		<command id="isolate UNIT">
+			启动在命令行上指定的单元及其依赖项并停止所有其他单元，除非它们具有 IgnoreOnIsolate=yes。
+			如果给出没有扩展名的单元名称，将假定扩展名为“.target”。
+
+			这类似于在传统的 init 系统中更改运行级别。
+			隔离命令将立即停止新单元中未启用的进程，可能包括您当前使用的图形环境或终端。
+
+			这仅适用于启用了 AllowIsolate= 的设备。
+			<refer file="systemd.unit(5)" />
+		</command>
+		<command id="kill PATTERN...">
+			向单元的一个或多个进程发送信号。使用 --kill-who= 选择要杀死的进程。使用 --signal= 选择要发送的信号。
+		</command>
+		<command id="freeze PATTERN...">
+			使用 cgroup freezer 冻结在命令行中指定的一个或多个单元。
+			冻结该单元将导致与该单元对应的 cgroup 中包含的所有进程都被挂起。
+			挂起意味着单元的进程在解冻之前不会被安排在 CPU 上运行。
+			此命令仅在使用统一 cgroup 层次结构的系统上受支持。
+			在我们对单元执行作业之前，单元会自动解冻，例如在设备停止之前。
+		</command>
+		<command id="thaw PATTERN...">
+			解冻命令行中指定的一个或多个单元。
+			这是冻结命令的逆操作，并恢复单元 cgroup 中进程的执行。
+		</command>
+		<command id="is-active PATTERN...">
+			检查是否有任何指定的单元处于活动状态（即正在运行）。
+			如果至少有一个是活动的，则返回退出代码 0，否则返回非零。
+			除非指定 --quiet ，否则这也会将当前单元状态打印到标准输出。
+		</command>
+		<command id="is-failed PATTERN...">
+			检查是否有任何指定的单元处于 failed 状态。
+			如果至少有一个已失败，则返回退出代码 0，否则返回非零。
+			除非指定 --quiet ，否则这也会将当前单元状态打印到标准输出。
+		</command>
+		<command id="status [PATTERN...|PID...]]">
+			显示关于一个或多个单元的简洁的运行时状态信息，然后是来自日志的最新日志数据。
+
+			如果未指定单元，则显示系统状态。
+			如果与 --all 结合使用，还会显示所有单元的状态（受 -t 指定的限制）。
+			如果传递了PID，则显示有关进程所属单元的信息。
+
+			此函数旨在生成人类可读的输出。如果您正在寻找计算机可解析的输出，请改用 show。
+			默认情况下，此函数仅显示 10 行输出并椭圆化行以适应终端窗口。这可以用 --lines 和 --full 改变，见上文。
+			此外，journalctl --unit=NAME 或 journalctl --user-unit=NAME 对消息使用类似的过滤器，可能更方便。
+
+			systemd 会根据需要隐式加载单元，所以只需运行 status 就会尝试加载文件。
+			因此，该命令对于确定某些内容是否已加载没有用。
+			如果此后没有理由将其保留在内存中，则这些单元也可能在操作完成后快速卸载。
+			<output-fields>
+				如果单元已加载到内存中，则输出中的 "Loaded:" 行将显示 "loaded"。
+				"Loaded:" 的其他可能值包括：
+					"error" 如果加载时出现问题
+					"not-found" 如果没有找到该单元的单元文件
+					"bad-setting" 如果无法解析基本单元文件设置
+					"masked" 如果单元文件已被屏蔽
+
+				除了显示单元文件的路径外，该行还将显示启用状态。启用的命令在开机时启动。
+				在 is-enabled 命令的文档中查看可能的启用状态的完整表格 —— 包括 "masked" 的定义。
+
+				"Active:" 行显示活动状态。该值通常为 "active" 或
+				"inactive"。
+				活动可能意味着启动、绑定、插入等，具体取决于单元类型。
+				该单元也可能正在改变状态，报告 "activating" 或 "deactivating" 状态。
+				当服务以某种方式失败时，会进入一种特殊的 "failed" 状态，例如崩溃、以错误代码退出或超时。
+				如果进入失败状态，将记录原因以供日后参考。
+			</output-fields>
+			<demo>
+				systemctl status mysqld.service NetworkManager.service
+				systemctl status 26701 NetworkManager.service
+				systemctl --all list-unit-files "mysql*"
+			</demo>
+		</command>
+		<command id="show [PATTERN...|JOB...]">
+			显示一个或多个单元、作业或管理器本身的属性。
+			如果未指定参数，将显示管理器的属性。
+			如果指定了单元名称，则会显示该单元的属性，如果指定了作业 ID，则会显示作业的属性。
+			默认情况下，禁止空属性。使用 --all 也显示这些。要选择要显示的特定属性，请使用 --property=。
+			此命令旨在当计算机可解析输出被需要时才使用。如果您正在寻找格式化的人类可读输出，请使用 status。
+
+			systemctl show 显示的许多属性直接映射到系统和服务管理器及其单元文件的配置设置。
+			该命令显示的属性通常是原始配置设置的更底层、规范化的版本，并在配置之外公开运行时状态。
+			例如，服务单元所显示的属性包括服务的当前主进程标识符 "MainPID"时状（这是运行态），
+			而时间设置始终作为属性公开，为以 "...USec" 后缀结尾，即使匹配的配置选项以 "...Sec" 结尾，
+			因为微秒是系统和服务管理器使用的标准化时间单元。
+		</command>
+		<command id="cat PATTERN...">
+			显示一个或多个单元的备份文件。打印单元的 "fragment" 和 "drop-ins"（源文件）。
+			每个文件前面都有一个注释，其中包括文件名。
+			接着显示磁盘上备份文件的内容，如果磁盘上更新了任何单元文件并且此后未发出 daemon-reload 命令，
+			则这可能与系统管理员对这些单元的理解不符。
+		</command>
+		<command id="set-property UNIT PROPERTY=VALUE...">
+			在运行时设置指定单元的属性（被支持）。这允许在运行时更改配置参数属性，例如资源控制设置。
+			并非所有属性都可以在运行时更改，但许多资源控制设置（主要是 systemd.resource-control(5) 中的设置）可能会更改。
+			更改会立即应用，并存储在磁盘上以供将来启动，除非 --runtime 被传递，在这种情况下，设置仅适用于下一次重新启动。
+			属性赋值的语法与单元文件中的赋值语法非常相似。
+			<demo>systemctl set-property foobar.service CPUShares=777</demo>
+			如果指定的单元似乎处于非活动状态，则更改将仅存储在前面所述的磁盘上，因此它们将在单元启动时生效。
+			此命令允许同时更改多个属性，这比单独设置它们更可取。与单元文件配置设置一样，分配一个空列表将重置该属性。
+		</command>
+		<command id="help PATTERN...|PID...">
+			如果可用，显示一个或多个单元的手册页。如果给出了 PID，则会显示该进程所属单元的手册页。
+		</command>
+		<command id="reset-failed [PATTERN...]">
+			重置指定单元的 "failed" 状态，或者如果没有传递单元名称，则重置所有单元的状态。
+			当某个单元以某种方式失败时（即进程以非零错误代码退出、异常终止或超时），它会自动进入 "failed" 状态，
+			并记录其退出代码和状态以供管理员检查，直到服务使用此命令 stopped/re-started 或 reset。
+		</command>
+		<command id="list-dependencies [UNIT]">
+			显示指定单元需要和想要的单元。
+			这会递归地列出 Requires=、Requisite=、ConsistsOf=、Wants=、BindsTo= 依赖项之后的单元。
+			如果未指定单元，则默认为 default.target。默认情况下，仅递归扩展目标单元。
+			当 --all 被传递时，所有其他单元也会递归扩展。
+			选项 --reverse、--after、--before 可用于更改显示的依赖项类型。
+			<demo>systemctl list-dependencies mysqld.service</demo>
+		</command>
+	</commands>
+
+	<commands tag="单元文件命令">
+		<command id="list-unit-files [PATTERN...]">
+			列出系统上安装的单元文件及其启用状态（由 is-enabled 报告）。
+			如果指定了一个或多个 PATTERN，则仅显示名称与其中之一匹配的单元文件（不支持匹配单元文件系统路径的模式）。
+			<demo>systemctl --all list-unit-files "mysql*"</demo>
+		</command>
+		<command id="enable UNIT..., enable PATH...">
+			启用一个或多个单元或单元实例。这将创建一组符号链接，如指示单元文件的 "[Install]" 部分中编码的那样。
+			创建符号链接后，系统管理器配置将重新加载（以等效于 daemon-reload 的方式），以确保更改立即被考虑到。
+			这不会同时启动任何正在启用的单元。
+			如果需要，将此命令与 --now 开关结合使用，或稍后使用适当的参数调用 start。
+			在单元实例启用的情况下，会在单元配置目录中创建与实例名称相同的符号链接，但是它们指向单个模板单元文件，它们从中实例化。
+
+			该命令需要有效的单元名称（各种单元文件目录会自动搜索具有适当名称的单元文件），或者单元文件的绝对路径（这些文件被直接读取）。
+			如果指定的单元文件位于通常的单元文件目录之外，则会创建一个额外的符号链接，将其链接到单元配置路径中，从而确保在诸如 start 之类的命令请求时可以找到它。
+			当 systemd 启动时，链接单元文件所在的文件系统必须是可访问的（例如，不允许在 /home 或 /var 下的任何内容，除非这些目录位于根文件系统上）。
+
+			此命令将打印执行的文件系统操作。可以通过传递 --quiet 来抑制此输出。
+
+			此操作仅创建单元文件的 "[Install]" 部分中建议的符号链接。
+			虽然此命令是操作单元配置目录的推荐方法，但管理员可以通过在此目录下放置或删除符号链接来自由地手动进行其他更改。
+			这对于创建偏离建议默认安装的配置特别有用。在此情况下，管理员必须确保根据需要手动调用 daemon-reload，以确保更改被考虑到。
+
+			启用单元不应与启动（激活）单元混淆，如 start 命令所做的那样。
+			启用和启动单元是正交的：单元可以在未启动的情况下启用，也可以在未启用的情况下启动。
+			启用简单地将单元挂钩到各种建议的位置（例如，以便在开机时或插入特定类型的硬件时自动启动单元）。
+			启动实际上会产生守护进程（在服务单元的情况下），或绑定套接字（在套接字单元的情况下），等等。
+
+			根据是否指定了 --system、--user、--runtime、--global，对系统、仅对调用方用户、仅对系统的本次开机、对所有用户的所有未来登录，启用单元。
+			在最后一种情况下，不会重新加载 systemd 守护程序配置。
+
+			不支持在屏蔽的单元上使用 enable 并导致错误。
+		</command>
+		<command id="disable UNIT...">
+			禁用一个或多个单元。
+			这将从单元配置目录中删除所有符号链接（指向单元文件（支持特定单元）），因此撤消由 enable 或 link 所做的任何更改。
+			这会删除匹配单元文件的所有符号链接，包括手动创建的符号链接，而不仅是那些由 enable 或 link 实际创建的符号链接。
+			虽然 disable 会撤消 enable 的效果，但这两个命令在其他方面并不对称；因为 disable 可能会删除更多的符号链接，比同一单元的先前的 enable 调用所创建的来说。
+
+			此命令只期待有效的单元名称，它不接受单元文件的路径。
+
+			除了单元被指定为参数之外，所有单元（列出于
+			Also=setting（包含于被操作的任何单元文件的 "[Install]" 部分））都被禁用。
+
+			此命令在完成操作后隐式地重新加载系统管理器配置。此命令不会隐式停止正在被禁用的单元。
+			如果需要，可以将此命令与 --now 开关结合使用，或者稍后使用适当的参数调用 stop 命令。
+
+			此命令将打印有关执行的文件系统操作（符号链接删除）的信息。可以通过传递 --quiet 来抑制此输出。
+			此命令以与 enable 类似的方式接受 --system、--user、--runtime、--global。
+		</command>
+		<command id="reenable UNIT...">
+			重新启用一个或多个单元，如命令行中所指定。
+			这是 disable 和 enable 的组合，可用于将单元文件启用的符号链接重置为其 "[Install]" 部分中配置的默认值。
+			此命令只期待一个单元名称，它不接受单元文件的路径。
+		</command>
+
+		<command id="preset UNIT...">
+			
+		</command>
+
+		<command id="preset-all">
+		</command>
+
+		<command id="is-enabled UNIT...">
+		</command>
+		<command id="mask UNIT...">
+		</command>
+		<command id="unmask UNIT...">
+		</command>
+		<command id="link PATH...">
+		</command>
+		<command id="revert UNIT...">
+		</command>
+
+		<command id="add-wants TARGET UNIT..., add-requires TARGET UNIT...">
+		
+		</command>
+
+		<command id="edit UNIT...">
+		</command>
+
+		<command id="get-default">
+		</command>
+		<command id="set-default TARGET">
+		</command>
+	</commands>
+</command>

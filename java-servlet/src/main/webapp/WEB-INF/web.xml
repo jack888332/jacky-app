@@ -3,15 +3,12 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-	<display-name>JackyLab</display-name>
 	<servlet>
-		<servlet-name>HttpServletCase</servlet-name>
-		<display-name>HttpServletCase</display-name>
-		<description></description>
-		<servlet-class>demo.servlet.HttpServletCase</servlet-class>
+		<servlet-name>ServletCase</servlet-name>
+		<servlet-class>demo.servlet.ServletCase</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>HttpServletCase</servlet-name>
-		<url-pattern>/HttpServletCase</url-pattern>
+		<servlet-name>ServletCase</servlet-name>
+		<url-pattern>/myServletCase</url-pattern>
 	</servlet-mapping>
 </web-app>

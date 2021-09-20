@@ -1,0 +1,27 @@
+<command id="grep" usage="tee [OPTION]... [FILE]...">
+	将标准输入复制到每个文件，也复制到标准输出
+	<options>
+		<option id="--append" abbr="-a">
+			附加到给定的文件，不要覆盖
+		</option>
+		<option id="--ignore-interrupts" abbr="-i">
+			忽略中断信号
+		</option>
+		<option id="--output-error[=MODE]" abbr="-i">
+			设置写入错误时的行为
+			MODE 确定输出写入错误的行为：
+			'warn' 诊断写入任何输出的错误
+			'warn-nopipe' 诊断写入任何输出而不是管道的错误
+			'exit' 写入任何输出时出错退出
+			'exit-nopipe' 错误写入任何输出而不是管道时退出
+
+			-p 选项的默认模式是 'warn-nopipe'
+			未指定 --output-error 时的默认操作是在错误写入管道时立即退出，并诊断写入非管道输出的错误。
+		</option>
+		<option abbr="-p">
+			诊断写入非管道的错误
+		</option>
+	</options>
+</command>
+
+

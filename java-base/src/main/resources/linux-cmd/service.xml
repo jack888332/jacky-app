@@ -1,0 +1,24 @@
+<command id="service">
+	service 命令仅支持基本的 LSB 操作（start, stop, restart, try-restart, reload, force-reload, status）。
+	对于其他操作，请尝试使用 systemctl。
+
+	service SCRIPT COMMAND [OPTIONS]
+	service --status-all
+	
+	service 尽可能在可预测的环境中运行 System V init 脚本，删除大多数环境变量并将当前工作目录设置为 /。
+	
+	SCRIPT 参数指定位于 /etc/init.d/SCRIPT 中的 System V init 脚本。
+	COMMAND 支持的值取决于调用的脚本，服务将 COMMAND 和 OPTIONS 传递给未修改的初始化脚本。
+	所有脚本至少应该支持 start 和 stop 命令。
+	作为一种特殊情况，如果 COMMAND 是 --full-restart，脚本将运行两次，首先使用 stop 命令，然后使用 start 命令。
+	
+	service --status-all 使用 status 命令按字母顺序运行所有 init 脚本。
+	
+	如果 init 脚本文件不存在，脚本会尝试使用旧操作。
+	如果没有找到合适的遗留操作并且 COMMAND 是 LSB 核心规范中指定的操作之一，则输入将重定向到 systemctl。
+	否则命令将失败并返回代码 2。
+	
+	LANG, TERM 是传递给 init 脚本的唯一环境变量。
+	
+	<refer command="chkconfig, ntsysv, systemd, systemctl, systemd.service" />
+</command>

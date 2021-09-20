@@ -1,0 +1,78 @@
+<command id="info" usage="info [OPTION]... [MENU-ITEM...]">
+	<options title="frequently-used">
+		<option id="-a, --all">
+			使用所有匹配的手册
+		</option>
+		<option id="-k, --apropos=STRING">
+			在所有手册的所有索引中查找 STRING
+		</option>
+		<option id="-d, --directory=DIR">
+			将 DIR 添加到 INFOPATH
+		</option>
+		<option id="-f, --file=MANUAL">
+			指定要访问的信息手册
+		</option>
+		<option id="--index-search=STRING">
+			转到索引条目 STRING 指向的节点
+		</option>
+		<option id="-n, --node=NODENAME">
+			在第一个访问的信息文件中指定节点
+		</option>
+		<option id="-o, --output=FILE">
+			将选定的节点输出到 FILE
+		</option>
+		<option id="-O, --show-options, --usage">
+			转到命令行选项节点
+		</option>
+		<option id="--subnodes">
+			递归输出菜单项
+		</option>
+		<option id="-v, --variable VAR=VALUE">
+			将 VALUE 分配给 Info 变量 VAR
+		</option>
+		<option id="-w, --where, --location">
+			打印信息文件的物理位置
+		</option>
+	</options>
+
+	<keymap title="frequently-used">
+		Basic Info command keys
+
+		H Close this help window.
+		q Quit Info altogether.
+		h Invoke the Info tutorial.
+
+		Up Move up one line.
+		Down Move down one line.
+		PgUp Scroll backward one screenful.
+		PgDn Scroll forward one screenful.
+		Home Go to the beginning of this node.
+		End Go to the end of this node.
+
+		TAB Skip to the next hypertext link.
+		RET Follow the hypertext link under the cursor.
+		l Go back to the last node seen in this window.
+
+		[ Go to the previous node in the document.
+		] Go to the next node in the document.
+		p Go to the previous node on this level.
+		n Go to the next node on this level.
+		u Go up one level.
+		t Go to the top node of this document.
+		d Go to the main 'directory' node.
+
+		1...9 Pick the first...ninth item in this node's menu.
+		0 Pick the last item in this node's menu.
+		m Pick a menu item specified by name.
+		f Follow a cross reference specified by name.
+		g Go to a node specified by name.
+
+		/ Search forward for a specified string.
+		{ Search for previous occurrence.
+		} Search for next occurrence.
+		i Search for a specified string in the index, and select the node referenced by the first entry found.
+		I Synthesize menu of matching index entries.
+
+		C-g Cancel the current operation.
+	</keymap>
+</command>

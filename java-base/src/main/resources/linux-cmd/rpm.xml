@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <command id="rpm" usage="rpm [potion...]">
-	<option id="--query" abbr="-q">
+	<option id="-q, --query PACKAGE">
 		查询...
+		<!-- 以下两个命令作用相近 -->
+		rpm -qa | grep mysql
+		yum list --installed | grep mysql
 	</option>
 	<option id="--verify" abbr="-V">
 		验证已安装的RPM

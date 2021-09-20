@@ -1,0 +1,18 @@
+<command id="help" usage="help [-dms] [pattern ...]">
+	显示有关内置命令的信息。
+	显示内置命令的简要摘要。
+	如果指定了 PATTERN，则给出与 PATTERN 匹配的所有命令的详细帮助，否则打印帮助主题列表。
+	退出状态：除非找不到 PATTERN 或给出无效选项，否则返回成功。
+	<options>
+		<option id="-d">
+			输出每个主题的简短描述
+		</option>
+		<option id="-m">
+			以伪联机帮助relation页格式显示用法
+		</option>
+		<option id="-s">
+			只为匹配 PATTERN 的每个主题输出一个简短的使用概要
+		</option>
+	</options>
+	<refer command="man, info," />
+</command>
