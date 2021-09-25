@@ -22,6 +22,8 @@ public class TestIO {
 
 	public static void main(String[] args) throws Exception {
 		init();
+		
+		// 从标准输入执行系统命令
 		URL url = Thread.currentThread().getContextClassLoader().getResource("ModifyFileNamesInBulk.bat");
 		File file = new File(url.toURI());
 		String command = StringUtils.joinWith(" ", "cmd /k start /d", file.getParent(), file.getName());

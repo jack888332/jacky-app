@@ -4,11 +4,16 @@
 
 <web-app>
 	<servlet>
-		<servlet-name>ServletCase</servlet-name>
-		<servlet-class>demo.servlet.ServletCase</servlet-class>
+		<servlet-name>ServletCase1</servlet-name>
+		<servlet-class>demo.servlet.ServletCase1</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ServletCase</servlet-name>
-		<url-pattern>/myServletCase</url-pattern>
+		<servlet-name>ServletCase1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
 	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>servlet-demo.html</welcome-file>
+		<welcome-file>mixcode.html</welcome-file>
+	</welcome-file-list>
 </web-app>
