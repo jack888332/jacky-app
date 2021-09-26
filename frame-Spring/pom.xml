@@ -13,8 +13,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.3.10.RELEASE</spring.version>
-		<hibernate.version>5.2.10.Final</hibernate.version>
+		<spring.version>5.3.10</spring.version>
+		<hibernate.version>5.5.7.Final</hibernate.version>
 	</properties>
 
 	<!-- 本项目的依赖信息 -->
@@ -79,18 +79,11 @@
 		</dependency>
 
 		<!-- 数据库驱动 -->
-		<!-- <dependency> -->
-		<!-- <groupId>com.microsoft.sqlserver</groupId> -->
-		<!-- <artifactId>mssql-jdbc</artifactId> -->
-		<!-- <version>6.2.1.jre8</version> -->
-		<!-- </dependency> -->
-		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.23</version>
+			<version>8.0.26</version>
 		</dependency>
-
 
 		<!-- Shiro -->
 		<dependency>

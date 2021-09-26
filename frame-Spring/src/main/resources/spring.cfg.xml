@@ -24,10 +24,12 @@
 
 	<!-- 配置连接池 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-		<property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
-		<property name="jdbcUrl" value="jdbc:sqlserver://120.25.151.30:1433;DatabaseName=yy_myhomegy" />
-		<property name="user" value="yy_gy" />
-		<property name="password" value="./wjnxuyzMw.%@*51214sddd544s6" />
+		<!-- <property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" /> -->
+		<!-- <property name="jdbcUrl" value="jdbc:sqlserver://120.25.151.30:1433;DatabaseName=yy_myhomegy" /> -->
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql://47.94.161.113:3306/demo" />
+		<property name="user" value="root" />
+		<property name="password" value="Jack_19900922#" />
 		<property name="initialPoolSize" value="5" />
 		<property name="maxPoolSize" value="10" />
 		<property name="unreturnedConnectionTimeout" value="3000" />

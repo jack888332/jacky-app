@@ -5,7 +5,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- 数据库方言 -->
-		<property name="dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
 		<!-- 管理Session的方式,与Spring集成时,采用如下默认方式 -->
 	    <property name="current_session_context_class">
