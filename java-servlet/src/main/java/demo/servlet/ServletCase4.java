@@ -7,10 +7,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+// 请求转发案例
 @SuppressWarnings("serial")
 @WebServlet("/servlet4")
 public class ServletCase4 extends HttpServlet {
-
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

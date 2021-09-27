@@ -11,7 +11,7 @@
 		<module>java-base</module>
 		<module>java-servlet</module>
 		<module>frame-Spring</module>
-		<module>frame-Mybatis</module>
+		<module>data-container</module>
 	</modules>
 
 	<dependencies>
