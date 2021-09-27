@@ -15,7 +15,7 @@ public class ServletCase4 extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		System.out.println("Servlet4");
-		request.setAttribute("money", 10000); // 可设置请求域数据
+		request.setAttribute("money", 10000); // 请求域数据（若干请求转发的共享数据）
 		request.getRequestDispatcher("/servlet5").forward(request, response);
 	}
 
