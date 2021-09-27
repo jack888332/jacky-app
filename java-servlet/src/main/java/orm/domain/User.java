@@ -1,4 +1,4 @@
-package demo.jdbc.domain;
+package orm.domain;
 
 import java.util.Date;
 

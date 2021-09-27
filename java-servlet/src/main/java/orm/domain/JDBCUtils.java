@@ -1,4 +1,4 @@
-package demo.jdbc;
+package orm.domain;
 
 import java.sql.Connection;
 import java.sql.SQLException;

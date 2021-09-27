@@ -5,12 +5,12 @@ import java.util.Map;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import demo.jdbc.domain.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import orm.domain.User;
 
 @WebServlet("/login")
 @SuppressWarnings("serial")
