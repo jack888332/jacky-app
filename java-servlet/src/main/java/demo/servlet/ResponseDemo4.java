@@ -2,31 +2,24 @@ package demo.servlet;
 
 import java.io.IOException;
 
+import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-//重定向
-@WebServlet("/servlet6")
+@WebServlet("/response-demo-4")
 @SuppressWarnings("serial")
-public class ServletCase6 extends HttpServlet {
+public class ResponseDemo4 extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("Servlet6");
-		String resourcePath = req.getContextPath() + "/servlet5";
-		// sendRedirect(resp,resourcePath);
-		resp.sendRedirect(resourcePath); //
+		ServletContext context = this.getServletContext();
+		System.out.println(context.getAttribute("data"));
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
-	}
-
-	private void sendRedirect(HttpServletResponse resp, String resourcePath) {
-		resp.setStatus(302);
-		resp.setHeader("location", "/servlet5");
 	}
 }
