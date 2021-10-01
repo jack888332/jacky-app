@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part2;
 
 import java.io.IOException;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part1;
 
 import java.io.IOException;
 import jakarta.servlet.ServletException;
@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 // 请求转发案例
 @WebServlet("/servlet4")
 @SuppressWarnings("serial")
-public class ServletCase4 extends HttpServlet {
+public class RequestDemo4 extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

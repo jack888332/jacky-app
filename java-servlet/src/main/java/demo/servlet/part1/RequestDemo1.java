@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part1;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 
-public class ServletCase1 implements Servlet {
+public class RequestDemo1 implements Servlet {
 
 	@Override
 	public void init(ServletConfig config) throws ServletException {

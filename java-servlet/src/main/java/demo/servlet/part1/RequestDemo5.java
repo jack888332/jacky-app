@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/servlet5")
 @SuppressWarnings("serial")
-public class ServletCase5 extends HttpServlet {
+public class RequestDemo5 extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

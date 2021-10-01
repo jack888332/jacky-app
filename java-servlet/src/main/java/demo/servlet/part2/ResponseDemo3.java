@@ -1,6 +1,5 @@
-package demo.servlet;
+package demo.servlet.part2;
 
-import java.io.File;
 import java.io.IOException;
 
 import jakarta.servlet.ServletContext;

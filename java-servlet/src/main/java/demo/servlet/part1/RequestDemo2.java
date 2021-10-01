@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet({ "/servlet2", "/jackyServlet" })
-public class ServletCase2 extends HttpServlet {
+public class RequestDemo2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	// HttpServletRequest 和 HttpServletResponse 由 Tomcat 创建

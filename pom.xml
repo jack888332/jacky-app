@@ -12,6 +12,7 @@
 		<module>java-servlet</module>
 		<module>frame-Spring</module>
 		<module>data-container</module>
+		<module>web-servlet-another</module>
 	</modules>
 
 	<dependencies>

@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part1;
 
 import java.io.IOException;
 import java.util.Enumeration;
@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/servlet3")
-public class ServletCase3 extends HttpServlet {
+public class RequestDemo3 extends HttpServlet {
 	private static final long serialVersionUID = 1220378139052786465L;
 
 	@Override

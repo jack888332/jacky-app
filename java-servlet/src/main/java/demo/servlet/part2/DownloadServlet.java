@@ -1,4 +1,4 @@
-package demo.servlet;
+package demo.servlet.part2;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,18 +15,19 @@ import jakarta.servlet.http.HttpServletResponse;
 @SuppressWarnings("serial")
 public class DownloadServlet extends HttpServlet {
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// 1、获取请求参数中的资源名称
-		String imageName = req.getParameter("imageName");
+		String imageName = request.getParameter("imageName");
 		// 2、获取服务器文件在操作系统中的真实路径
 		ServletContext context = this.getServletContext();
 		// 3、字节输入流关联到该文件
 		FileInputStream fis = new FileInputStream(context.getRealPath("/images/" + imageName));
 		// 4、设置相应头，告诉浏览器以附件形式打开文件（弹出文件下载提示框）
-		resp.setHeader("content-type", context.getMimeType(imageName));
-		resp.setHeader("content-disposition", "attachment;filename=" + imageName);
+		response.setHeader("content-type", context.getMimeType(imageName));
+		response.setHeader("content-disposition", "attachment;filename=" + imageName);
 		// 5、字节输入流读取文件数据进内存缓冲区，再写进字节输出流
-		ServletOutputStream sos = resp.getOutputStream();
+		ServletOutputStream sos = response.getOutputStream();
 		byte[] buffer = new byte[1024 * 8];
 		int lenth = 0;
 		while ((lenth = fis.read(buffer)) != -1) {
@@ -36,7 +37,8 @@ public class DownloadServlet extends HttpServlet {
 	}
 
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		doGet(req, resp);
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doGet(request, response);
 	}
 }
