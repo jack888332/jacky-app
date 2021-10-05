@@ -1,4 +1,4 @@
-package demo.mixcode.login;
+package exercise.login1;
 
 import java.io.IOException;
 import java.util.Map;

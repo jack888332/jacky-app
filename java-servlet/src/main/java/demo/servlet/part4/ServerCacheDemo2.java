@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/getSession")
+@WebServlet("/getSession1")
 @SuppressWarnings("serial")
 public class ServerCacheDemo2 extends HttpServlet {
 	@Override

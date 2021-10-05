@@ -2,7 +2,7 @@ package test.junit;
 
 import org.junit.Test;
 
-import demo.mixcode.login.LoginDao;
+import exercise.login1.LoginDao;
 import orm.domain.User;
 
 public class LoginDaoTest {
