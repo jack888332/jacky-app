@@ -1,0 +1,18 @@
+.odd-number {
+	background-color: lightgrey;
+}
+
+.even-number {
+	background-color: mediumaquamarine;
+}
+
+table, td {
+	border-style: solid;
+	border-width: 1px;
+	border-color: midnightblue;
+}
+
+td {
+	padding: 5px 15px 5px 15px;
+	margin: 2px;
+}

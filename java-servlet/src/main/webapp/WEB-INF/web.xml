@@ -10,12 +10,12 @@
 		<servlet-name>ServletCase1</servlet-name>
 		<url-pattern>/servlet1</url-pattern>
 	</servlet-mapping>
-
+	
 	<welcome-file-list>
 		<welcome-file>servlet-demo.html</welcome-file>
 		<welcome-file>mixcode.html</welcome-file>
 		<welcome-file>./exercise-login2/login.jsp</welcome-file>
-		<welcome-file>./exercise-EL-JSTL/usage.jsp</welcome-file>
-	</welcome-file-list>
-
+		<welcome-file>./exercise-EL-JSTL/baseUsage.jsp</welcome-file>
+		<welcome-file>./exercise-EL-JSTL/userTable.jsp</welcome-file>
+	</welcome-file-list>	
 </web-app>

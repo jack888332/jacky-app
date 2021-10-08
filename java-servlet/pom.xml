@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>java-servlet</artifactId>
+	<artifactId>web-servlet</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>event demo</title>
+</head>
+
+<body>
+	<p id="title">有几种方式，向元素添加事件，并向事件绑定监听函数</p>
+
+	<!-- 
+		推荐使用
+		1、对同一个事件，可以添加多个监听函数
+		2、能够指定在哪个阶段（捕获阶段还是冒泡阶段）触发监听函数
+		3、除了DOM节点，还可以应用在window、XMLHttpRequest等对象上面
+	-->
+	<button id="node1">方式1</button>
+
+	<!-- 缺点：违反了HTML与JavaScript代码相分离的原则 -->
+	<button id="node2" onclick="show1();show2('B');">方式2</button>
+
+	<!-- 可以使用，存在局限性 -->
+	<button id="node3">方式3</button>
+	
+	<!-- 缺点：只会在冒泡阶段触发监听函数 -->
+	<button id="node4">方式4</button>
+
+	<!-- 非框架的自定义JS必须放置末尾 -->
+	<script type="text/javascript" src="event.js"></script>
+</body>
+
+</html>

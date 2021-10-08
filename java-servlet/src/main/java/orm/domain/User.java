@@ -1,18 +1,31 @@
 package orm.domain;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class User {
 	private Integer id;
 	private String username;
 	private String password;
-	private Date birthday;
+	private Date regdate;
 
-	public int getId() {
+	public User() {
+	}
+
+	public User(Integer id, String username, String password) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		setRegdate();
+	}
+
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -32,16 +45,18 @@ public class User {
 		this.password = password;
 	}
 
-	public Date getBirthday() {
-		return birthday;
+	public String getRegdate() {
+		SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd kk:mm", new Locale("zh", "CN"));
+		return sdf.format(this.regdate);
 	}
 
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setRegdate() {
+		this.regdate = Calendar.getInstance().getTime();
 	}
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", birthday=" + birthday + "]";
+		return "User [username=" + username + ", password=" + password + ", regdate=" + regdate + "]";
 	}
+
 }
