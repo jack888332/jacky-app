@@ -4,15 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jackylab</groupId>
 	<artifactId>jacky-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>pom</packaging>
 
 	<modules>
 		<module>java-base</module>
-		<module>java-servlet</module>
+		<module>data-container</module>		
+		<module>web-servlet</module>		
+		<module>web-servlet-mvc</module>
 		<module>frame-Spring</module>
-		<module>data-container</module>
-		<module>web-servlet-another</module>
 	</modules>
 
 	<dependencies>
