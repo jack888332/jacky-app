@@ -1,14 +1,14 @@
-<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- 根据CLASSPATH中搜索类 -->
+<%@page import="java.util.ArrayList"%>
 <%@ page import="model.bean.User"%>
 
 <html>
 <head>
 <meta charset="UTF-8">
 <title>user list</title>
-<link rel="stylesheet" type="text/css" href="/mime/css/mix.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/MIME-FILE/css/mix.css" />
 
 </head>
 <body>
@@ -38,6 +38,6 @@
 		</c:forEach>
 	</table>
 
-	<script src="/mime/js/mix.js"></script>
+	<script src="${pageContext.request.contextPath}/MIME-FILE/js/mix.js"></script>
 </body>
 </html>
