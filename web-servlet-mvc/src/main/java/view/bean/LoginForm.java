@@ -1,4 +1,4 @@
-package model.bean.form;
+package view.bean;
 
 public class LoginForm {
 	private String username;
