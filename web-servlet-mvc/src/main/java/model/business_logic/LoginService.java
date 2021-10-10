@@ -1,5 +1,8 @@
 package model.business_logic;
 
-public interface LoginService {
+import model.bean.User;
+import view.bean.LoginForm;
 
+public interface LoginService {
+	User checkLoginInfo(LoginForm info);
 }

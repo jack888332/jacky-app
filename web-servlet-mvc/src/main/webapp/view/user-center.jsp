@@ -1,32 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!-- 根据CLASSPATH中搜索类 -->
-<%@page import="java.util.ArrayList"%>
-<%@ page import="model.bean.User"%>
 
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>user list</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/mime/css/mix.css" />
-
 </head>
-<body>
-	<%
-	ArrayList<User> userList = new ArrayList<User>();
-	userList.add(new User(1, "Jack", "123"));
-	userList.add(new User(2, "Rose", "1234"));
-	userList.add(new User(3, "Mike", "12345"));
-	userList.add(new User(4, "Tony", "123456"));
-	request.setAttribute("users", userList);
-	%>
 
+<body>
+    <div id="controlBar">
+    	<button id="add">添加</button>
+    	<button id="add">查询</button>
+    </div>
 	<table>
 		<tr class="head">
 			<td>编号</td>
 			<td>账号</td>
 			<td>密码</td>
 			<td>注册时间</td>
+			<td>操作</td>
 		</tr>
 		<c:forEach items="${users}" var="user" varStatus="s">
 			<tr class="row" onclick="setRowStyle(this, ${s.index})">
@@ -34,10 +28,15 @@
 				<td>${user.username}</td>
 				<td>${user.password}</td>
 				<td>${user.regdate}</td>
+				<td>
+					<button id="modify">修改</button>
+					<button id="delete">删除</button>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>
-
-	<script src="${pageContext.request.contextPath}/mime/js/mix.js"></script>
 </body>
+
+<script src="${pageContext.request.contextPath}/mime/js/mix.js"></script>
+
 </html>

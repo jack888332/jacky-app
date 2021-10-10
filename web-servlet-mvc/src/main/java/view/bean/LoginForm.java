@@ -28,9 +28,4 @@ public class LoginForm {
 	public void setCheckcode(String checkcode) {
 		this.checkcode = checkcode;
 	}
-
-	@Override
-	public String toString() {
-		return "LoginInfo [username=" + username + ", password=" + password + ", checkcode=" + checkcode + "]";
-	}
 }
