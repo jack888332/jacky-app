@@ -14,7 +14,7 @@ public class LoginCtrl extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		response.getWriter().write("djgilsdjgls");
+		response.getWriter().write("解读过你");
 	}
 
 	@Override
