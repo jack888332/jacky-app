@@ -7,6 +7,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import model.business_logic.UserCenterService;
 import model.business_logic.impl.UserCenterServiceImpl;
 
@@ -17,7 +18,8 @@ public class UserServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		UserCenterService ucs = new UserCenterServiceImpl();
-		request.setAttribute("users", ucs.getAllUsers());
+		HttpSession session = request.getSession();
+		session.setAttribute("users", ucs.getAllUsers());
 		response.sendRedirect(request.getContextPath() + "/view/user-center.jsp");
 	}
 

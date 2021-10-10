@@ -11,7 +11,7 @@
 
 <body>
 	<div class="main">
-		<form action="/mydemo/exercise-login2/login" method="POST">
+		<form action="${pageContext.request.contextPath}/login" method="POST">
 			<table>
 				<tr>
 					<td>账号</td>
@@ -33,7 +33,7 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<img id="checkcode" src="/mydemo/exercise-login2/checkcode" />
+						<img id="checkcode" src="${pageContext.request.contextPath}/login/checkcode" />
 					</td>
 				</tr>
 				<tr>
@@ -45,5 +45,7 @@
 		</form>
 	</div>
 </body>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/mime/js/mix.js"></script>
 
 </html>

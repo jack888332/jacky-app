@@ -52,7 +52,6 @@ public class LoginServlet extends HttpServlet {
 			request.setAttribute("error-1", "验证码错误");
 			request.getRequestDispatcher("/login.jsp").forward(request, response);
 		}
-
 	}
 
 	@Override

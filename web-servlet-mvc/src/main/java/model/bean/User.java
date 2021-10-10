@@ -46,6 +46,9 @@ public class User {
 	}
 
 	public String getRegdate() {
+		if (this.regdate == null) {
+			setRegdate();
+		}
 		SimpleDateFormat sdf = new SimpleDateFormat("YYYY/MM/dd kk:mm", new Locale("zh", "CN"));
 		return sdf.format(this.regdate);
 	}

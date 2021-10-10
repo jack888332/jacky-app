@@ -12,6 +12,6 @@ window.onload = function () {
 	var img = document.getElementById("checkcode");
 	img.onclick = function () {
 		var date = new Date().getTime();
-		this.src = "/mydemo/exercise-login2/checkcode?" + date;
+		this.src = "/web-servlet-mvc/login/checkcode?" + date;
 	}
 }

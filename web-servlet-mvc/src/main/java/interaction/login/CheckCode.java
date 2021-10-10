@@ -21,7 +21,7 @@ import java.awt.GraphicsEnvironment;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
-@WebServlet("/exercise-login2/checkcode")
+@WebServlet("/login/checkcode")
 @SuppressWarnings("serial")
 public class CheckCode extends HttpServlet {
 	@Override
