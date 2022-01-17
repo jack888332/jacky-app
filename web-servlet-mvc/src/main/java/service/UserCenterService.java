@@ -1,4 +1,4 @@
-package model.business_logic;
+package service;
 
 import java.util.List;
 

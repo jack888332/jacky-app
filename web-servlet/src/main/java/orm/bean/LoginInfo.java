@@ -1,4 +1,4 @@
-package orm.domain;
+package orm.bean;
 
 public class LoginInfo {
 	private String username;

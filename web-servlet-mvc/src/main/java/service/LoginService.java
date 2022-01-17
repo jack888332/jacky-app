@@ -1,4 +1,4 @@
-package model.business_logic;
+package service;
 
 import model.bean.User;
 import view.bean.LoginForm;

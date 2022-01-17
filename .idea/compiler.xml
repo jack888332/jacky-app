@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-base" />
+        <module name="org-spring" />
+        <module name="web-servlet-mvc" />
+        <module name="data-container" />
+        <module name="web-servlet" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

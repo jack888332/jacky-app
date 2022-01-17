@@ -1,4 +1,4 @@
-package interaction.login;
+package controller.module.login;
 
 import java.io.IOException;
 import java.util.Map;
@@ -12,8 +12,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.bean.User;
-import model.business_logic.LoginService;
-import model.business_logic.impl.LoginServiceImpl;
+import service.LoginService;
+import service.impl.LoginServiceImpl;
 import view.bean.LoginForm;
 
 @WebServlet("/login")

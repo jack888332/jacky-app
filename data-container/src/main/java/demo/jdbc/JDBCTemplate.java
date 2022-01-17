@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import orm.domain.User;
+import orm.bean.User;
 
 public class JDBCTemplate {
 	private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());

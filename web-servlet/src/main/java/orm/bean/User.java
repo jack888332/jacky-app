@@ -1,4 +1,4 @@
-package orm.domain;
+package orm.bean;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

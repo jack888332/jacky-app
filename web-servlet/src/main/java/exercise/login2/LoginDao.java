@@ -4,9 +4,9 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import orm.domain.JDBCUtils;
-import orm.domain.LoginInfo;
-import orm.domain.User;
+import orm.bean.JDBCUtils;
+import orm.bean.LoginInfo;
+import orm.bean.User;
 
 public class LoginDao {
 	private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());

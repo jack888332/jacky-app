@@ -1,4 +1,4 @@
-package interaction.login;
+package controller.module.user;
 
 import java.io.IOException;
 
@@ -8,10 +8,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import model.business_logic.UserCenterService;
-import model.business_logic.impl.UserCenterServiceImpl;
+import service.UserCenterService;
+import service.impl.UserCenterServiceImpl;
 
-@WebServlet("/user-center")
+@WebServlet({ "/user-center", "/add-user" })
 @SuppressWarnings("serial")
 public class UserServlet extends HttpServlet {
 	@Override

@@ -1,4 +1,4 @@
-package interaction.login;
+package controller.module.login;
 
 import java.io.IOException;
 import java.util.Random;

@@ -3,7 +3,7 @@ package test.junit;
 import org.junit.Test;
 
 import exercise.login1.LoginDao;
-import orm.domain.User;
+import orm.bean.User;
 
 public class LoginDaoTest {
 	LoginDao loginDao = new LoginDao();

@@ -12,7 +12,7 @@
 		<module>data-container</module>		
 		<module>web-servlet</module>		
 		<module>web-servlet-mvc</module>
-		<module>frame-Spring</module>
+		<module>org-spring</module>
 	</modules>
 
 	<dependencies>

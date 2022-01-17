@@ -2,6 +2,9 @@
 	<demo>
 		man grep | col | tee /usr/local/man-command/man.grep.txt
 		info yum | col | tee /usr/local/man-command/info.yum.txt
+
+		docker ps --help | col | tee /home/command-helper/docker/help.docker.ps.txt
+		docker commit --help | col | tee /home/command-helper/docker/help.docker.commit.txt
 	</demo>
 
 	<options>

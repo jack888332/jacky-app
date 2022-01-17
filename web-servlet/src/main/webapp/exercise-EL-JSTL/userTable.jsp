@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- 根据CLASSPATH中搜索类 -->
-<%@ page import="orm.domain.User"%>
+<%@ page import="orm.bean.User"%>
 
 <html>
 <head>

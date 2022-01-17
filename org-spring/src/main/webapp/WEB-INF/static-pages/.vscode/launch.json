@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "pwa-chrome",
+			"request": "launch",
+			"name": "Launch Chrome against localhost",
+			"url": "C:\\Users\\Jacky\\git\\JackyLab\\src\\main\\webapp\\WEB-INF\\static-pages\\action\\sample.html",
+			"webRoot": "${workspaceFolder}"
+		}
+	]
+}

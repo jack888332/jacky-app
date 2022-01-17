@@ -11,13 +11,11 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet({ "/servlet2", "/jackyServlet" })
+@SuppressWarnings("serial")
 public class RequestDemo2 extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
 	// HttpServletRequest 和 HttpServletResponse 由 Tomcat 创建
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
- 
 		// 获取请求行
 		System.out.println("请求方法：" + request.getMethod());
 		System.out.println("协议：" + request.getProtocol());

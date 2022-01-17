@@ -5,6 +5,8 @@
 <title>JSP Demo</title>
 </head>
 <body>
-	<a></a>
+	<%
+	System.out.println("巴拉巴拉");
+	%>
 </body>
 </html>
