@@ -13,5 +13,13 @@
         <module name="web-servlet" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-container" target="15" />
+      <module name="jacky-app" target="15" />
+      <module name="java-base" target="15" />
+      <module name="org-spring" target="15" />
+      <module name="web-servlet" target="15" />
+      <module name="web-servlet-mvc" target="15" />
+    </bytecodeTargetLevel>
   </component>
 </project>
