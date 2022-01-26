@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.1.xsd">
 
 	<!-- 扫描包 -->
-	<context:component-scan base-package="me.*" />
+	<context:component-scan base-package="demo.*" />
 
 	<!-- 扫描注解 -->
 	<context:annotation-config />
@@ -27,7 +27,7 @@
 		<!-- <property name="driverClass" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" /> -->
 		<!-- <property name="jdbcUrl" value="jdbc:sqlserver://120.25.151.30:1433;DatabaseName=yy_myhomegy" /> -->
 		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mysql://47.94.161.113:3306/demo" />
+		<property name="jdbcUrl" value="jdbc:mysql://8.134.218.201:3306/nf_core" />
 		<property name="user" value="root" />
 		<property name="password" value="Jack_19900922#" />
 		<property name="initialPoolSize" value="5" />

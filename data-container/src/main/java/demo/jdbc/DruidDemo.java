@@ -10,7 +10,7 @@ public class DruidDemo {
 		Connection conn = null;
 		PreparedStatement ps = null;
 		try {
-			conn = JDBCUtils.getConnection();
+			conn = MyJdbcUtils.getConnection();
 			String sql = "insert into user values(null,?,?,null)";
 			ps = conn.prepareStatement(sql);
 			ps.setString(1, "Jacky");
@@ -20,7 +20,7 @@ public class DruidDemo {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			JDBCUtils.close(ps, conn);
+			MyJdbcUtils.close(ps, conn);
 		}
 		
 	}
