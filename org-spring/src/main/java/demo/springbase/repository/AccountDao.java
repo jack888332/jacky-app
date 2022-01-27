@@ -5,11 +5,11 @@ import demo.domain.Account;
 import java.util.List;
 
 public interface AccountDao {
-    void save(Account account);
+    int insert(Account account);
 
-    void update(Account account);
+    int update(Account account);
 
-    void delete(Integer accountId);
+    int delete(Integer accountId);
 
     Account findById(Integer accountId);
 

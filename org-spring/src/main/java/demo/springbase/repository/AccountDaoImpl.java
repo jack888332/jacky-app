@@ -2,31 +2,42 @@ package demo.springbase.repository;
 
 import demo.domain.Account;
 import demo.kit.MyJdbcUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
 
+@Repository //此类被载入IOC
 public class AccountDaoImpl implements AccountDao {
-    private JdbcTemplate template = new JdbcTemplate(MyJdbcUtils.getDataSource());
+    private JdbcTemplate template;
+
+    @Autowired
+    private void setJdbcTemplate(JdbcTemplate template) {
+        this.template = template;
+    }
 
     @Override
-    public void save(Account account) {
+    public int insert(Account account) {
         String sql = "insert into account(name, money) values (?, ?)";
-        template.update(sql, account.getName(), account.getMoney());
+        // 返回操作行数
+        return template.update(sql, account.getName(), account.getMoney());
     }
 
     @Override
-    public void update(Account account) {
+    public int update(Account account) {
         String sql = "update account set name=?, money=? where id=?";
-        template.update(sql, account.getName(), account.getMoney(), account.getId());
+        // 返回操作行数
+        return template.update(sql, account.getName(), account.getMoney(), account.getId());
     }
 
     @Override
-    public void delete(Integer accountId) {
+    public int delete(Integer accountId) {
         String sql = "delete from account where id=?";
-        template.update(sql, accountId);
+        // 返回操作行数
+        return template.update(sql, accountId);
     }
 
     @Override

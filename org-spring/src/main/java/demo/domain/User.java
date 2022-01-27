@@ -1,6 +1,8 @@
 package demo.domain;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 	private Integer id;
 	private String username;
 	private String password;

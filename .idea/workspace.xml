@@ -10,65 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66559f22-7907-43f7-9a84-f2b527d0bf45" name="Changes" comment="调整项目结构">
-      <change afterPath="$PROJECT_DIR$/org-spring/memo/mysql/bbb.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/memo/mysql/data.init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/memo/mysql/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/kit/MyJdbcTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/kit/MyJdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/org-spring/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/service/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-spring/src/main/resources/springbase.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/org-spring/src/test/java/demo/test/SpringBaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/DDL.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/MyJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/DruidDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/DruidDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/JDBCTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/MyJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/java/demo/jdbc/MyJdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/java/orm/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/java/demo/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/META-INF/maven/com.jackylab/data-container/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data-container/target/classes/META-INF/maven/com.jackylab/data-container/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/C3P0Demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/DDL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/DruidDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/JDBCTemplate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/JDBCTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/jdbc/JDBCUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/demo/nosql/RedisHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-container/target/classes/orm/bean/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memo/maven/settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/memo/config/maven.settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/com/nightfish/springbase/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/handler/IndexAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/controller/IndexAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/handler/ModelDataAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/controller/ModelDataAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/handler/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/controller/RestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/handler/TestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/controller/TestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/handler/ViewResolverAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/controller/ViewResolverAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/project/action/EmployeeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/project/controller/EmployeeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/project/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/project/repository/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/project/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/project/repository/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/project/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/project/domain/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/project/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/project/domain/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/views/CustomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springmvc/views/CustomView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/vo/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/me/springmvc/vo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/kit/MyJdbcTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/java/demo/springbase/repository/AccountDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org-spring/src/main/resources/spring.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org-spring/src/main/resources/spring.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/common/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/common/JDBCUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/login/CheckCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/login/CheckCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/login/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/login/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/user/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/controller/module/user/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/model/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/model/bean/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/model/data_access/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/model/data_access/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/service/impl/UserCenterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/service/impl/UserCenterServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/classes/view/bean/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/classes/view/bean/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-mvc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-mvc/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web-servlet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web-servlet/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +38,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -138,6 +92,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/org-spring/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/org-spring/src/main/resources" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -389,7 +344,10 @@
       <workItem from="1643116774062" duration="2266000" />
       <workItem from="1643119800294" duration="12031000" />
       <workItem from="1643186415577" duration="5699000" />
-      <workItem from="1643202722522" duration="13769000" />
+      <workItem from="1643202722522" duration="14077000" />
+      <workItem from="1643244607247" duration="6238000" />
+      <workItem from="1643255002183" duration="2727000" />
+      <workItem from="1643264464843" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="4534">
       <created>1642899947627</created>
@@ -398,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642899947627</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="调整项目结构">
+      <created>1643219230457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643219230457</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
