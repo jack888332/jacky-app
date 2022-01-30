@@ -1,8 +1,4 @@
-/bin/
-.project
-.classpath
-.settings/
-.mvn/
+#由idea生成的文件
 .idea/
 *.iml
 *.class
