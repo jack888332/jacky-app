@@ -465,4 +465,8 @@
     <MESSAGE value="结构调整" />
     <option name="LAST_COMMIT_MESSAGE" value="结构调整" />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
 </project>
