@@ -5,12 +5,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="demo.springbase.config_by_annotation"/>
+    <context:component-scan base-package="demo.part1.ioc.config_by_annotation"/>
     <context:annotation-config/>
 
-    <bean id="myJdbcUtils" class="demo.kit.MyJdbcUtils"/>
+    <bean id="myJdbcUtils" class="kit.MyJdbcUtils"/>
 
-    <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate">
+    <bean id="template1" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg>
             <!-- 向当前bean的构造方法的形参注入目标bean的成员方法的返回值 -->
             <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">

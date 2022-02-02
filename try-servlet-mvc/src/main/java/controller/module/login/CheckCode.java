@@ -1,25 +1,18 @@
 package controller.module.login;
 
-import java.io.IOException;
-import java.util.Random;
-
-import javax.imageio.ImageIO;
-
-import org.junit.Test;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.junit.Test;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.GraphicsEnvironment;
-import java.awt.RenderingHints;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.Random;
 
 @WebServlet("/login/checkcode")
 @SuppressWarnings("serial")

@@ -1,9 +1,8 @@
 package test.junit;
 
+import demo.part5.mixcode.login1.LoginDao;
 import org.junit.Test;
-
-import exercise.login1.LoginDao;
-import orm.bean.User;
+import domain.User;
 
 public class LoginDaoTest {
 	LoginDao loginDao = new LoginDao();

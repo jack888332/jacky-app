@@ -1,7 +1,10 @@
 package demo.security;
 
-import java.security.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.Provider;
 import java.security.Provider.Service;
+import java.security.Security;
 
 // Java Cryptography Architecture (JCA)
 public class EncodingCase {

@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="myJdbcUtils" class="demo.kit.MyJdbcUtils"/>
+    <bean id="myJdbcUtils" class="kit.MyJdbcUtils"/>
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <constructor-arg>
@@ -15,11 +15,11 @@
         </constructor-arg>
     </bean>
 
-    <bean id="accountDao" class="demo.springbase.config_by_xml.repository.AccountDaoImpl">
+    <bean id="accountDao" class="demo.part1.ioc.config_by_xml.repository.AccountDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
-    <bean id="accountService" class="demo.springbase.config_by_xml.service.AccountServiceImpl">
+    <bean id="accountService" class="demo.part1.ioc.config_by_xml.service.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 

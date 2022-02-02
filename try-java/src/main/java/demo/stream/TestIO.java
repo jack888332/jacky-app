@@ -1,20 +1,11 @@
 package demo.stream;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import org.apache.commons.lang3.StringUtils;
+
+import java.io.*;
 import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.nio.charset.Charset;
-
-import org.apache.commons.lang3.StringUtils;
 
 public class TestIO {
 

@@ -1,12 +1,8 @@
 package demo.nosql;
 
-import java.util.Set;
+import redis.clients.jedis.*;
 
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-import redis.clients.jedis.Response;
-import redis.clients.jedis.Transaction;
+import java.util.Set;
 
 public class RedisHandler {
 

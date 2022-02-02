@@ -1,7 +1,5 @@
 package controller.module.user;
 
-import java.io.IOException;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,6 +8,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import service.UserCenterService;
 import service.impl.UserCenterServiceImpl;
+
+import java.io.IOException;
 
 @WebServlet({ "/user-center", "/add-user" })
 @SuppressWarnings("serial")

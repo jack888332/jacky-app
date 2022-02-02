@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Java>
-	<Class modifier="[public][abstract]">
-		<Member-variable modifier="[public|protected|private][static][final]" />
-		<Member-Method modifier="[public|protected|private][static][final]">
-			<Local-Interface modifier="[abstract]" implicitly="abstract static" />
-			<Local-Class modifier="[abstract]" implicitly="static" />
-		</Member-Method>
-		<Code-Block>
-			<Local-Interface modifier="[abstract]" implicitly="abstract static" />
-			<Local-Class modifier="[abstract]" implicitly="static" />
-		</Code-Block>
-		<Member-Interface modifier="[public|protected|private][abstract][static]"
-			implicitly="abstract static" />
-		<Member-Class modifier="[public|protected|private][abstract][static]" implicitly="static" />
-		<AnonymousClass />
+<Java-Structure>
+    <Class modifier="[public][abstract]">
+        <Member-variable modifier="[public|protected|private][static][final]"/>
+        <Member-Method modifier="[public|protected|private][static][final]">
+            <Local-Interface modifier="[abstract]" implicitly="abstract static"/>
+            <Local-Class modifier="[abstract]" implicitly="static"/>
+        </Member-Method>
+        <Code-Block>
+            <Local-Interface modifier="[abstract]" implicitly="abstract static"/>
+            <Local-Class modifier="[abstract]" implicitly="static"/>
+        </Code-Block>
+        <Member-Interface modifier="[public|protected|private][abstract][static]" implicitly="abstract static"/>
+        <Member-Class modifier="[public|protected|private][abstract][static]" implicitly="static"/>
+        <AnonymousClass/>
+    </Class>
 
-		<description>
-			局部类和接口声明可以与包含块中的语句（包括局部变量声明语句）自由混合。
-			如果局部类或接口声明具有任何访问修饰符 public、protected、private，则会导致编译时错误。
-			如果局部类或接口声明具有修饰符 static，则会出现编译时错误。
-			局部类可以是普通类、枚举类、或记录类。每个局部普通类都是内部类。每个局部枚举类和局部记录类都是隐式静态的，因此不是内部类。
-			局部接口可以是普通接口，但不是注释接口。每个局部接口都是隐式静态的。
-			与匿名类一样，局部类或接口不是任何包、类或接口的成员。与匿名类不同，局部类或接口具有简单的名称。
-		</description>
-	</Class>
+    <Interface modifier="[public][abstract]" implicitly="public abstract">
+        <Member-variable modifier="[public][static][final]" implicitly="public static final"/>
+        <Member-Method modifier="{public abstract},{[public] default},{[private][static]}" implicitly="public abstract"/>
+        <Member-Interface modifier="[public][abstract][static]" implicitly="public abstract static"/>
+        <Member-Class modifier="[public][abstract][static]" implicitly="public static">
+            <Member-Interface modifier="[public|protected|private][abstract][static]" implicitly="public abstract static"/>
+            <Member-Method modifier="[public|protected|private][abstract][static]">
+                <Local-Interface modifier="[abstract]" implicitly="abstract static"/>
+                <Local-Class modifier="[abstract]" implicitly="static"/>
+            </Member-Method>
+        </Member-Class>
+    </Interface>
 
-	<Interface modifier="[public][abstract]" implicitly="public abstract">
-		<Member-variable modifier="[public][static][final]" implicitly="public static final" />
-		<Member-Method modifier="{public abstract},{[public] default},{[private][static]} "
-			implicitly="public abstract" />
-		<Member-Interface modifier="[public][abstract][static]" implicitly="public abstract static" />
-		<Member-Class modifier="[public][abstract][static]" implicitly="public static">
-			<Member-Interface modifier="[public|protected|private][abstract][static]"
-				implicitly="public abstract static" />
-			<Member-Method modifier="[public|protected|private][abstract][static]">
-				<Local-Interface modifier="[abstract]" implicitly="abstract static" />
-				<Local-Class modifier="[abstract]" implicitly="static" />
-			</Member-Method>
-		</Member-Class>
-	</Interface>
-</Java>
+    <emphasize>
+        局部类/接口声明可以与包含块中的语句（包括局部变量声明语句）自由混合。
+        如果局部类/接口声明具有任何访问修饰符 public、protected、private，则会导致编译时错误。
+        如果局部类/接口声明具有修饰符 static，则会出现编译时错误。
+        局部类可以是普通类、枚举类、或记录类。每个局部普通类都是内部类。每个局部枚举类和局部记录类都是隐式静态的，因此不是内部类。
+        局部接口可以是普通接口，但不是注释接口。每个局部接口都是隐式静态的。
+        与匿名类一样，局部类/接口不是任何包、类或接口的成员。与匿名类不同，局部类/接口具有简单的名称。
+    </emphasize>
+</Java-Structure>

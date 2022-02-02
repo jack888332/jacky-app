@@ -1,11 +1,11 @@
 package demo.handler_of_format_file;
 
-import java.io.File;
-import java.net.URL;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+
+import java.io.File;
+import java.net.URL;
 
 public class XmlHandlerByJsoup {
 	private Document document;

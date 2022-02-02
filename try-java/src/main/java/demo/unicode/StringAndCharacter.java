@@ -1,10 +1,10 @@
 package demo.unicode;
 
+import org.junit.Before;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
-
-import org.junit.*;
 
 public class StringAndCharacter {
 

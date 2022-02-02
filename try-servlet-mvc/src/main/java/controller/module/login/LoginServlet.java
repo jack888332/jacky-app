@@ -1,10 +1,5 @@
 package controller.module.login;
 
-import java.io.IOException;
-import java.util.Map;
-
-import org.apache.commons.beanutils.BeanUtils;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -12,9 +7,13 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.bean.User;
+import org.apache.commons.beanutils.BeanUtils;
 import service.LoginService;
 import service.impl.LoginServiceImpl;
 import view.bean.LoginForm;
+
+import java.io.IOException;
+import java.util.Map;
 
 @WebServlet("/login")
 @SuppressWarnings("serial")

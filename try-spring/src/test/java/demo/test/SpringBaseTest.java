@@ -1,11 +1,11 @@
 package demo.test;
 
-import demo.domain.Account;
-import demo.springbase.config_by_xml.service.AccountService;
+import domain.Account;
+import demo.part1.ioc.config_by_annotation.service.UserService;
+import demo.part1.ioc.config_by_xml.service.AccountService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -15,7 +15,7 @@ public class SpringBaseTest {
     private static ApplicationContext ac1, ac2;
 
     static {
-        //ac1 = new ClassPathXmlApplicationContext("springbase.cfg1.xml");
+        ac1 = new ClassPathXmlApplicationContext("springbase.cfg1.xml");
         ac2 = new ClassPathXmlApplicationContext("springbase.cfg2.xml");
     }
 
@@ -40,7 +40,7 @@ public class SpringBaseTest {
 
     @Test
     public void test2() {
-        AccountService as = ac2.getBean("accountServiceImpl", AccountService.class);
+        UserService as = ac2.getBean("userServiceImpl", UserService.class);
         List<Account> list = as.findAll();
         for (Account account : list) {
             System.out.println(account);

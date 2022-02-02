@@ -17,6 +17,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="try-container" options="" />
+      <module name="try-java" options="" />
+      <module name="try-servlet" options="" />
       <module name="try-spring-boot" options="-parameters" />
     </option>
   </component>

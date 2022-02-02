@@ -1,9 +1,9 @@
 package model.data_access;
 
-import java.util.List;
-
 import model.bean.User;
 import view.bean.LoginForm;
+
+import java.util.List;
 
 public interface UserDao {
 

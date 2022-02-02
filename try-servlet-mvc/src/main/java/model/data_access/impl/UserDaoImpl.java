@@ -1,15 +1,14 @@
 package model.data_access.impl;
 
-import java.util.List;
-
-import org.springframework.dao.DataAccessException;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
-
 import common.JDBCUtils;
 import model.bean.User;
 import model.data_access.UserDao;
+import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import view.bean.LoginForm;
+
+import java.util.List;
 
 public class UserDaoImpl implements UserDao {
 	private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());

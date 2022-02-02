@@ -5,7 +5,7 @@
 
 	<servlet>
 		<servlet-name>ServletCase1</servlet-name>
-		<servlet-class>demo.servlet.part1.RequestDemo1</servlet-class>
+		<servlet-class>demo.part1.servlet.RequestDemo1</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
