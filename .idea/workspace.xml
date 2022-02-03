@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="try-spring:war exploded" />
-      <artifact name="try-spring:war exploded" />
+      <artifact name="chapter4-try-mvc:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -11,108 +10,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="结构调整">
-      <change afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/nest/JavaModifier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/memo/about-IED.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/AgencyContract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/Producer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_subclass/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_subclass/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/JunitMixSpring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part2/base_on_subclass/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter3-try-aop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/C3P0Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/C3P0Demo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/MyJdbcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/MyJdbcTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-container/src/main/java/demo/jdbc/MyJdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-container/src/main/java/demo/nosql/RedisHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-container/src/main/java/demo/nosql/RedisHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/CollectionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/CollectionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/TestedCalendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/TestedCalendar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/TestedClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/nest/NestedClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/collection/TestedInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/nest/NestedInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/handler_of_format_file/ExcelHandlerByPOI.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/handler_of_format_file/ExcelHandlerByPOI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/handler_of_format_file/XmlHandlerByJsoup.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/handler_of_format_file/XmlHandlerByJsoup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/reflection/annotation/WithConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/reflection/annotation/WithConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/security/EncodingCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/security/EncodingCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/socket/ClientTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/socket/ClientTCP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/socket/ServerTcp.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/socket/ServerTcp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/stream/TestIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/stream/TestIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/java/demo/unicode/StringAndCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/java/demo/unicode/StringAndCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/src/main/resources/JavaModifier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-java/src/main/resources/JavaModifier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/common/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/common/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/user/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/user/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/UserCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/UserCenterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/impl/UserCenterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/impl/UserCenterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part1/RequestDemo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/DownloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/DownloadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/ResponseDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/ResponseDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/ResponseDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part2/ResponseDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part3/BrowserCacheDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part3/BrowserCacheDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part3/BrowserCacheDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part4/ServerCacheDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part4/ServerCacheDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/servlet/part4/ServerCacheDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login1/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login1/LoginFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login1/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login1/LoginSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginSuccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login2/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login2/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/exercise/login2/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/orm/bean/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/domain/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/orm/bean/LoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/domain/LoginInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/orm/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo16.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/FilterDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/part8/demo/filter/ServletForTestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/ServletForTestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/userTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/userTable.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/try-servlet/src/test/java/test/junit/LoginDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-servlet/src/test/java/test/junit/LoginDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/try-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/kit/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/kit/MyJdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_annotation/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/repository/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_annotation/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_annotation/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_annotation/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_xml/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/repository/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_xml/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/repository/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_xml/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springbase/config_by_xml/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/controller/IndexAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/IndexAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/controller/ModelDataAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/ModelDataAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/controller/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/RestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/controller/TestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/TestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/controller/ViewResolverAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/ViewResolverAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/project/controller/EmployeeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/controller/EmployeeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/project/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/domain/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/project/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/domain/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/project/repository/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/repository/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/project/repository/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/repository/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/springmvc/views/CustomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/views/CustomView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/spring.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/resources/spring.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/src/test/java/demo/test/SpringBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/src/test/java/demo/test/SpringBaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_annotation/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part1/ioc/config_by_xml/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/AgencyContract.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part1/base_on_interface/AgencyContract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part1/base_on_interface/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_interface/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part1/base_on_interface/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_subclass/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part2/proxy/base_on_subclass/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part2/base_on_subclass/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/IndexAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/IndexAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/ModelDataAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/ModelDataAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/RestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/TestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/TestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/controller/ViewResolverAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/ViewResolverAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/controller/EmployeeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/project/controller/EmployeeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/domain/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/project/domain/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/project/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/repository/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/project/repository/DepartmentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/project/repository/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/project/repository/EmployeeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/demo/part4/mvc/views/CustomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/views/CustomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/domain/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/java/kit/MyJdbcUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/spring.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/resources/spring.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/resources/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/.vscode/extensions.json" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/.vscode/extensions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/action/dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/action/dom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/action/json.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/action/json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/action/sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/action/sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/layout/box.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/layout/box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/static-pages/layout/mixcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/static-pages/layout/mixcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/mixcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/mixcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/project/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/project/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/project/input.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/project/input.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/project/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/project/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/test/actionForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/test/actionForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/test/modelData.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/test/modelData.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/test/modelDataIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/test/modelDataIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/test/rest.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/test/rest.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/views/test/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/views/test/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/src/test/java/demo/test/SpringBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringBaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +107,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -165,44 +130,56 @@
     </option>
   </component>
   <component name="ProjectId" id="24P02rh78ezaitoiEbcykLpDMVj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/try-java/src/main/java/demo/nest" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27471265" />
     <property name="settings.editor.selected.configurable" value="project.validation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\java\demo\nest" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-spring\src\main\java\demo\part2\dynamic_proxy\base_on_subclass" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-servlet-mvc" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-container" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main\java" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter2-try-proxy\src\main\java" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main\resources" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter1-try-ioc\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\web\WEB-INF" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-spring" />
       <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\resources" />
       <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\java" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\java\demo\nest" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-spring" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-spring\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpringBaseTest.test2">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.part2.proxy.base_on_interface.Client" />
+  <component name="RunDashboard">
+    <option name="openRunningConfigInTab" value="true" />
+  </component>
+  <component name="RunManager" selected="JUnit.JunitMixSpring.test2">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.part2.proxy.base_on_subclass.Client" />
       <module name="try-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.part2.proxy.base_on_interface.*" />
+          <option name="PATTERN" value="demo.part2.proxy.base_on_subclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,16 +187,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBaseTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="try-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demo.test" />
-      <option name="MAIN_CLASS_NAME" value="demo.test.SpringBaseTest" />
+    <configuration name="JunitMixSpring.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter1-try-ioc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JunitMixSpring" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JunitMixSpring.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter1-try-ioc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JunitMixSpring" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBaseTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter1-try-ioc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringBaseTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBaseTest.test2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chapter1-try-ioc" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringBaseTest" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -326,9 +327,9 @@
     <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="15" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="try-spring:war exploded">
+        <artifact name="chapter4-try-mvc:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/try_spring" />
+            <option name="CONTEXT_PATH" value="/chapter4_try_mvc_war_exploded" />
           </settings>
         </artifact>
       </deployment>
@@ -406,19 +407,28 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="chapter4-try-mvc:war exploded" />
+        </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SpringBaseTest.test2" />
+      <item itemvalue="Application.Client (1)" />
+      <item itemvalue="JUnit.SpringBaseTest.test1" />
+      <item itemvalue="JUnit.SpringBaseTest.test2 (1)" />
       <item itemvalue="Spring Boot.TrySpringBootApplication" />
       <item itemvalue="Tomcat Server.Tomcat 10" />
       <item itemvalue="Tomcat Server.Tomcat 9" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="JUnit.JunitMixSpring.test1" />
+      <item itemvalue="JUnit.JunitMixSpring.test2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringBaseTest.test2" />
-        <item itemvalue="Application.Client" />
+        <item itemvalue="JUnit.JunitMixSpring.test2" />
+        <item itemvalue="JUnit.JunitMixSpring.test1" />
+        <item itemvalue="JUnit.SpringBaseTest.test2 (1)" />
+        <item itemvalue="JUnit.SpringBaseTest.test1" />
+        <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -435,7 +445,9 @@
       <workItem from="1643526230645" duration="4977000" />
       <workItem from="1643604755465" duration="564000" />
       <workItem from="1643641357749" duration="22356000" />
-      <workItem from="1643809016743" duration="14100000" />
+      <workItem from="1643809016743" duration="15287000" />
+      <workItem from="1643870247169" duration="7425000" />
+      <workItem from="1643877840593" duration="6161000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1643518168349</created>
@@ -444,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643518168349</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="结构调整">
+      <created>1643823362304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643823362304</updated>
+    </task>
+    <task id="LOCAL-00003" summary="结构调整">
+      <created>1643823407295</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643823407295</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +488,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="结构调整" />
     <option name="LAST_COMMIT_MESSAGE" value="结构调整" />
   </component>

@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="try-java" />
+        <module name="chapter2-try-proxy" />
         <module name="try-container" />
         <module name="try-spring-boot" />
-        <module name="try-spring" />
         <module name="try-servlet" />
         <module name="try-servlet-mvc" />
+        <module name="chapter1-try-ioc" />
+        <module name="chapter3-try-aop" />
+        <module name="chapter4-try-mvc" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter2-try-dynamic_proxy" target="15" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

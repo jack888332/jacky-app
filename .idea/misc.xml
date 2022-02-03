@@ -15,7 +15,15 @@
         <option value="$PROJECT_DIR$/try-servlet-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/try-java/pom.xml" />
         <option value="$PROJECT_DIR$/try-container/pom.xml" />
+        <option value="$PROJECT_DIR$/try-spring/chapter1-try-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter2-try-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/chapter2-try-dynamic_proxy/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK" />

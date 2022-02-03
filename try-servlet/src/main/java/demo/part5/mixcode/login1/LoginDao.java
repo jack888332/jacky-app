@@ -1,10 +1,10 @@
 package demo.part5.mixcode.login1;
 
+import domain.JDBCUtils;
+import domain.User;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import domain.JDBCUtils;
-import domain.User;
 
 public class LoginDao {
 	private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
