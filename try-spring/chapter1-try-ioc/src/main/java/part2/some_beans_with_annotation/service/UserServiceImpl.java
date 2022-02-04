@@ -1,18 +1,17 @@
-package part1.config_by_xml.service;
-
+package part2.some_beans_with_annotation.service;
 
 import domain.Account;
-import part1.config_by_xml.repository.AccountDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import part2.some_beans_with_annotation.repository.UserDao;
 
 import java.util.List;
 
-public class AccountServiceImpl implements AccountService {
-    private AccountDao accountDao;
-
-    //从IOC根据id找到对应的bean进行赋值
-    public void setAccountDao(AccountDao account) {
-        this.accountDao = account;
-    }
+@Service("userService")
+public class UserServiceImpl implements UserService {
+    //从IOC根据id找到对应的bean进行装配
+    @Autowired
+    private UserDao accountDao;
 
     @Override
     public void save(Account account) {

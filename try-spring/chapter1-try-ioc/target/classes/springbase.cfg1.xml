@@ -15,11 +15,11 @@
         </constructor-arg>
     </bean>
 
-    <bean id="accountDao" class="part1.config_by_xml.repository.AccountDaoImpl">
+    <bean id="accountDao" class="part1.all_beans_in_xml.repository.AccountDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
-    <bean id="accountService" class="part1.config_by_xml.service.AccountServiceImpl">
+    <bean id="accountService" class="part1.all_beans_in_xml.service.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 

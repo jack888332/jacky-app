@@ -1,4 +1,4 @@
-package part1.config_by_xml.service;
+package part3.apply_to_transaction.service;
 
 import domain.Account;
 
@@ -14,4 +14,11 @@ public interface AccountService {
     Account findById(Integer accountId);
 
     List<Account> findAll();
+
+    /**
+     * @param sourceName
+     * @param targetName
+     * @param money
+     */
+    void transfer(String sourceName, String targetName, Float money);
 }

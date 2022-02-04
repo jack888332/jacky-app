@@ -4,12 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import part1.config_by_xml.service.AccountService;
-import part2.config_by_annotation.service.UserService;
+import part1.all_beans_in_xml.service.AccountService;
+import part2.some_beans_with_annotation.service.UserService;
 
 import java.util.List;
 
-public class SpringBaseTest {
+public class SpringTest_1 {
     private static ApplicationContext ac1, ac2;
 
     static {

@@ -1,18 +1,17 @@
-package part2.config_by_annotation.repository;
+package part1.all_beans_in_xml.repository;
 
 import domain.Account;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.util.List;
 
-//此类被载入IOC
-@Repository
-public class UserDaoImpl implements UserDao {
-    @Resource(name = "template1")
+public class AccountDaoImpl implements AccountDao {
     private JdbcTemplate template;
+
+    public void setJdbcTemplate(JdbcTemplate template) {
+        this.template = template;
+    }
 
     @Override
     public int insert(Account account) {

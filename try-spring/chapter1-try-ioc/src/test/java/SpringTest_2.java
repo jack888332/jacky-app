@@ -2,18 +2,16 @@ import domain.Account;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import part1.config_by_xml.service.AccountService;
-import part2.config_by_annotation.service.UserService;
+import part1.all_beans_in_xml.service.AccountService;
+import part2.some_beans_with_annotation.service.UserService;
 
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:springbase.cfg1.xml", "classpath:springbase.cfg2.xml"})
-public class JunitMixSpring {
+public class SpringTest_2 {
     @Autowired
     AccountService as;
     @Autowired

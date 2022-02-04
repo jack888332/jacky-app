@@ -1,4 +1,4 @@
-package part1.config_by_xml.repository;
+package part3.apply_to_transaction.repository;
 
 import domain.Account;
 
@@ -14,4 +14,6 @@ public interface AccountDao {
     Account findById(Integer accountId);
 
     List<Account> findAll();
+
+    Account findAccountByName(String accountName);
 }

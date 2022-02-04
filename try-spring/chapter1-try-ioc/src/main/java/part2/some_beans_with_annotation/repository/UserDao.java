@@ -1,4 +1,4 @@
-package part2.config_by_annotation.repository;
+package part2.some_beans_with_annotation.repository;
 
 import domain.Account;
 

@@ -1,10 +1,10 @@
-package part2.config_by_annotation.service;
+package part1.all_beans_in_xml.service;
 
 import domain.Account;
 
 import java.util.List;
 
-public interface UserService {
+public interface AccountService {
     void save(Account account);
 
     void update(Account account);
