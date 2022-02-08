@@ -1,6 +1,7 @@
 package part3.apply_to_transaction.service;
 
 import domain.Account;
+import domain.kit.TransactionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import part3.apply_to_transaction.repository.AccountDao;
@@ -15,9 +16,12 @@ import java.util.List;
 public class AccountServiceImpl implements AccountService {
     @Autowired
     private AccountDao accountDao;
+    @Autowired
+    private TransactionManager tm;
 
     @Override
     public void save(Account account) {
+        tm.start();
         int rows = accountDao.insert(account);
         if (rows > 0) {
             System.out.println("insert ok");

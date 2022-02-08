@@ -9,34 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="结构调整">
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part3/all_beans_with_annotation/MySpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" afterDir="false" />
+    <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="更改了多个配置项">
+      <change afterPath="$PROJECT_DIR$/.environment/maven/setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/BinderForThreadAndConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/TransactionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/repository/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/repository/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/repository/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/JunitMixSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyConnectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/about-IED.md" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/about-IED.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/config/maven.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/config/maven.settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/bbb.md" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/bbb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/data.init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/data.init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +46,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HierarchyBrowserManager">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
     <option name="SORT_ALPHABETICALLY" value="true" />
+    <option name="SCOPE" value="All" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" root0="SKIP_INSPECTION" />
@@ -92,6 +83,13 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="24P02rh78ezaitoiEbcykLpDMVj" />
   <component name="ProjectLevelVcsManager">
@@ -110,11 +108,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27471265" />
+    <property name="project.structure.side.proportion" value="0.39322916" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -125,11 +123,11 @@
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\eclipse-workspace\jacky-app\.environment" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\web\WEB-INF" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring" />
       <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\resources" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -374,14 +372,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SpringTest_2.test1" />
+      <item itemvalue="JUnit.SpringTest_2.test2" />
+      <item itemvalue="JUnit.SpringTest_3" />
+      <item itemvalue="JUnit.SpringTest_3.test1" />
+      <item itemvalue="JUnit.SpringTest.test1" />
       <item itemvalue="Spring Boot.TrySpringBootApplication" />
       <item itemvalue="Tomcat Server.Tomcat 10" />
       <item itemvalue="Tomcat Server.Tomcat 9" />
-      <item itemvalue="JUnit.SpringTest_2.test1" />
-      <item itemvalue="JUnit.SpringTest_2.test2" />
-      <item itemvalue="JUnit.SpringTest_3.test1" />
-      <item itemvalue="JUnit.SpringTest_3" />
-      <item itemvalue="JUnit.SpringTest.test1" />
     </list>
     <recent_temporary>
       <list>
@@ -408,7 +406,11 @@
       <workItem from="1643641357749" duration="22356000" />
       <workItem from="1643809016743" duration="15287000" />
       <workItem from="1643870247169" duration="7425000" />
-      <workItem from="1643877840593" duration="34040000" />
+      <workItem from="1643877840593" duration="34163000" />
+      <workItem from="1643982296548" duration="2673000" />
+      <workItem from="1644045236303" duration="6232000" />
+      <workItem from="1644058364506" duration="17449000" />
+      <workItem from="1644237020609" duration="8539000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1643518168349</created>
@@ -438,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643884410675</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="更改了多个配置项">
+      <created>1643970701891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643970701891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +467,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="结构调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构调整" />
+    <MESSAGE value="更改了多个配置项" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改了多个配置项" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

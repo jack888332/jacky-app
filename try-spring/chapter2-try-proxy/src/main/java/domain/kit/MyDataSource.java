@@ -1,22 +1,21 @@
 package domain.kit;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
-import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 
-@Component
-public class MyJdbcUtils {
+public class MyDataSource {
 	private static DataSource ds;
 
 	// 类加载初始化
 	static {
 		try {
 			Properties props = new Properties();
-			props.load(MyJdbcUtils.class.getClassLoader().getResourceAsStream("druid.properties"));
+			props.load(MyDataSource.class.getClassLoader().getResourceAsStream("druid.properties"));
+			// 引用Druid连接池
 			ds = DruidDataSourceFactory.createDataSource(props);
 		} catch (Exception e) {
 			e.printStackTrace();
