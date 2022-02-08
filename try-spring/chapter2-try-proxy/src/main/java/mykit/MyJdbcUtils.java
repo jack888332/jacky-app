@@ -1,4 +1,4 @@
-package domain.kit;
+package mykit;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 import org.springframework.stereotype.Component;

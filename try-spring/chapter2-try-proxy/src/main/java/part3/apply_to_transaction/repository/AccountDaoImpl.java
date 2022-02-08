@@ -1,6 +1,7 @@
 package part3.apply_to_transaction.repository;
 
 import domain.Account;
+import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -12,6 +13,8 @@ import java.util.List;
 public class AccountDaoImpl implements AccountDao {
     @Autowired
     private JdbcTemplate template;
+    @Autowired
+    QueryRunner qr;
 
     @Override
     public int insert(Account account) {

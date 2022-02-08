@@ -10,33 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="结构调整">
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part3/all_beans_with_annotation/MySpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jpb/persistence-units.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/repository/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/repository/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/config_by_xml/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part1/all_beans_in_xml/service/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/repository/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/repository/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/repository/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/config_by_annotation/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/java/part2/some_beans_with_annotation/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/JunitMixSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringBaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/test/java/SpringTest_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/target/classes/springbase.cfg2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyConnectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/BinderForThreadAndConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/MyJdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/about-IED.md" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/about-IED.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/config/maven.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/config/maven.settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/bbb.md" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/bbb.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/data.init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/data.init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/memo/mysql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/mysql/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +97,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27471265" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -125,11 +113,11 @@
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\jacky-app\.environment" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\web\WEB-INF" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring" />
       <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\resources" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-java\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -374,14 +362,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.TrySpringBootApplication" />
-      <item itemvalue="Tomcat Server.Tomcat 10" />
-      <item itemvalue="Tomcat Server.Tomcat 9" />
       <item itemvalue="JUnit.SpringTest_2.test1" />
       <item itemvalue="JUnit.SpringTest_2.test2" />
       <item itemvalue="JUnit.SpringTest_3.test1" />
       <item itemvalue="JUnit.SpringTest_3" />
       <item itemvalue="JUnit.SpringTest.test1" />
+      <item itemvalue="Spring Boot.TrySpringBootApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 10" />
+      <item itemvalue="Tomcat Server.Tomcat 9" />
     </list>
     <recent_temporary>
       <list>
@@ -409,6 +397,9 @@
       <workItem from="1643809016743" duration="15287000" />
       <workItem from="1643870247169" duration="7425000" />
       <workItem from="1643877840593" duration="34040000" />
+      <workItem from="1644216825325" duration="409000" />
+      <workItem from="1644217267901" duration="7649000" />
+      <workItem from="1644284551009" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1643518168349</created>
@@ -443,6 +434,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,6 +1,6 @@
 package part3.apply_to_transaction;
 
-import domain.kit.MyJdbcUtils;
+import mykit.MyJdbcUtils;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
