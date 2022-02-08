@@ -10,7 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="结构调整">
+      <change afterPath="$PROJECT_DIR$/.environment/maven/setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.environment/memo/config/maven.settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.environment/memo/config/maven.settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/src/main/resources/springbase.cfg2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/domain/kit/MyJdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/BinderForThreadAndConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/BinderForThreadAndConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/MyJdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/MyDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/mykit/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/MySpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/repository/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction/service/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/test/java/SpringTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +42,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HierarchyBrowserManager">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
     <option name="SORT_ALPHABETICALLY" value="true" />
+    <option name="SCOPE" value="All" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" root0="SKIP_INSPECTION" />
@@ -66,6 +79,13 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="createModuleGroups" value="true" />
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="24P02rh78ezaitoiEbcykLpDMVj" />
   <component name="ProjectLevelVcsManager">
@@ -84,12 +104,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/try-spring/chapter2-try-proxy/src/main/java/part3/apply_to_transaction" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27471265" />
+    <property name="project.structure.side.proportion" value="0.39322916" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,7 +119,7 @@
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\jacky-app\.environment" />
+      <recent name="D:\eclipse-workspace\jacky-app\.environment" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\web\WEB-INF" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\src\main" />
       <recent name="D:\eclipse-workspace\jacky-app\try-spring" />
@@ -351,8 +370,8 @@
     <list>
       <item itemvalue="JUnit.SpringTest_2.test1" />
       <item itemvalue="JUnit.SpringTest_2.test2" />
-      <item itemvalue="JUnit.SpringTest_3.test1" />
       <item itemvalue="JUnit.SpringTest_3" />
+      <item itemvalue="JUnit.SpringTest_3.test1" />
       <item itemvalue="JUnit.SpringTest.test1" />
       <item itemvalue="Spring Boot.TrySpringBootApplication" />
       <item itemvalue="Tomcat Server.Tomcat 10" />
@@ -383,11 +402,11 @@
       <workItem from="1643641357749" duration="22356000" />
       <workItem from="1643809016743" duration="15287000" />
       <workItem from="1643870247169" duration="7425000" />
-      <workItem from="1643877840593" duration="34040000" />
-      <workItem from="1644216825325" duration="409000" />
-      <workItem from="1644217267901" duration="7649000" />
-      <workItem from="1644284551009" duration="1348000" />
-      <workItem from="1644285931127" duration="341000" />
+      <workItem from="1643877840593" duration="34163000" />
+      <workItem from="1643982296548" duration="2673000" />
+      <workItem from="1644045236303" duration="6232000" />
+      <workItem from="1644058364506" duration="17449000" />
+      <workItem from="1644237020609" duration="8539000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1643518168349</created>
@@ -417,23 +436,18 @@
       <option name="project" value="LOCAL" />
       <updated>1643884410675</updated>
     </task>
-    <task id="LOCAL-00005" summary="结构调整">
-      <created>1644285456847</created>
+    <task id="LOCAL-00005" summary="更改了多个配置项">
+      <created>1643970701891</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1644285456847</updated>
+      <updated>1643970701891</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
-    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
-    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -449,7 +463,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="结构调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="结构调整" />
+    <MESSAGE value="更改了多个配置项" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改了多个配置项" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

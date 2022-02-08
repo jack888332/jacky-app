@@ -1,4 +1,4 @@
-package mykit;
+package domain.kit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -13,7 +13,8 @@ public class BinderForThreadAndConnection {
     private DataSource dataSource;
 
     /**
-     * 从数据源打开连接，并把连接绑定到线程
+     * 从数据库获取一个连接，并绑定到一个线程
+     * @return
      */
     public Connection getConnectionInThread() {
         try{
@@ -32,7 +33,7 @@ public class BinderForThreadAndConnection {
         }
     }
 
-    public void close(){
+    public void unbind(){
         tl.remove();
     }
 }

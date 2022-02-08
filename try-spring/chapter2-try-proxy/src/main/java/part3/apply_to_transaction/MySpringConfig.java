@@ -1,6 +1,7 @@
 package part3.apply_to_transaction;
 
-import mykit.MyJdbcUtils;
+import domain.kit.MyDataSource;
+import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,6 +22,11 @@ public class MySpringConfig {
     // IOC 载入 DataSource 的实例
     @Bean(name = "ds1")
     public DataSource newDataSource() {
-        return MyJdbcUtils.getDataSource();
+        return MyDataSource.getDataSource();
+    }
+
+    @Bean
+    public QueryRunner newQueryRunner() {
+        return new QueryRunner();
     }
 }

@@ -1,4 +1,4 @@
-package mykit;
+package domain.kit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -8,9 +8,12 @@ import java.sql.SQLException;
 @Component
 public class TransactionManager {
     @Autowired
-    BinderForThreadAndConnection binder;
+    private BinderForThreadAndConnection binder;
 
-    public void init(){
+    /**
+     * 开始：取消自动提交
+     */
+    public void start() {
         try {
             binder.getConnectionInThread().setAutoCommit(false);
         } catch (SQLException e) {
@@ -18,7 +21,10 @@ public class TransactionManager {
         }
     }
 
-    public void commit(){
+    /**
+     * 提交事务
+     */
+    public void commit() {
         try {
             binder.getConnectionInThread().commit();
         } catch (SQLException e) {
@@ -26,7 +32,10 @@ public class TransactionManager {
         }
     }
 
-    public void rollback(){
+    /**
+     * 回滚事务
+     */
+    public void rollback() {
         try {
             binder.getConnectionInThread().rollback();
         } catch (SQLException e) {
@@ -34,9 +43,13 @@ public class TransactionManager {
         }
     }
 
-    public void close(){
+    /**
+     * 结束：关闭连接（连接仍在线程中）
+     */
+    public void close() {
         try {
             binder.getConnectionInThread().close();
+            binder.unbind();
         } catch (SQLException e) {
             e.printStackTrace();
         }

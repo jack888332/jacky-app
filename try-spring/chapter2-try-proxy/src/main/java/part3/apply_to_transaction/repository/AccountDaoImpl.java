@@ -1,62 +1,95 @@
 package part3.apply_to_transaction.repository;
 
 import domain.Account;
+import domain.kit.BinderForThreadAndConnection;
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.ResultSetHandler;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.springframework.aop.framework.ProxyFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
 public class AccountDaoImpl implements AccountDao {
     @Autowired
-    private JdbcTemplate template;
-    @Autowired
     QueryRunner qr;
+    @Autowired
+    private BinderForThreadAndConnection binder;
 
     @Override
     public int insert(Account account) {
-        String sql = "insert into account(name, money) values (?, ?)";
-        // 返回操作行数
-        return template.update(sql, account.getName(), account.getMoney());
+        int rows = 0;
+        try {
+            String sql = "insert into account(name, money) values (?, ?)";
+            rows = qr.update(binder.getConnectionInThread(), sql, account.getName(), account.getMoney());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rows;
     }
 
     @Override
     public int update(Account account) {
-        String sql = "update account set name=?, money=? where id=?";
-        // 返回操作行数
-        return template.update(sql, account.getName(), account.getMoney(), account.getId());
+        int rows = 0;
+        try {
+            String sql = "update account set name=?, money=? where id=?";
+            rows = qr.update(binder.getConnectionInThread(), sql, account.getName(), account.getMoney(), account.getId());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rows;
     }
 
     @Override
     public int delete(Integer accountId) {
-        String sql = "delete from account where id=?";
-        // 返回操作行数
-        return template.update(sql, accountId);
+        int rows = 0;
+        try {
+            String sql = "delete from account where id=?";
+            rows = qr.update(binder.getConnectionInThread(), sql, accountId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rows;
     }
 
     @Override
     public Account findById(Integer accountId) {
-        String sql = "select * from account where id=?";
-        // 返回单行
-        return template.queryForObject(sql, new BeanPropertyRowMapper<Account>(Account.class), accountId);
+        // 建立DB连接，执行DML，返回单行
+        try {
+            String sql = "select * from account where id=?";
+            return qr.query(binder.getConnectionInThread(), sql, new BeanHandler<>(Account.class), accountId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public List<Account> findAll() {
-        String sql = "select * from account";
-        // 返回多行
-        return template.query(sql, new BeanPropertyRowMapper<Account>(Account.class));
+        // 建立DB连接，执行DML，返回多行
+        try {
+            String sql = "select * from account";
+            return qr.query(binder.getConnectionInThread(), sql, new BeanListHandler<>(Account.class));
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public Account findAccountByName(String accountName) {
-        String sql = "select * from account where name=?";
+        // 建立DB连接，执行DML，返回多行
         try {
-            List<Account> accounts = template.query(
-                    sql, new BeanPropertyRowMapper<Account>(Account.class), accountName);
+            String sql = "select * from account where name=?";
+            List<Account> accounts = qr.query(binder.getConnectionInThread(), sql,
+                    new BeanListHandler<>(Account.class), accountName);
             if (accounts == null || accounts.size() == 0) {
                 return null;
             }
@@ -65,6 +98,7 @@ public class AccountDaoImpl implements AccountDao {
             }
             return accounts.get(0);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }
