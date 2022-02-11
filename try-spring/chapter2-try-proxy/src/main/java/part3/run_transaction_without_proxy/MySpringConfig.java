@@ -1,4 +1,4 @@
-package part3.run_transaction_without_proxy;
+package part3.apply_to_transaction;
 
 import domain.kit.MyDataSource;
 import org.apache.commons.dbutils.QueryRunner;
@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan("part3.run_transaction_without_proxy")
+@ComponentScan({"part3.run_transaction_without_proxy", "mykit"})
 public class MySpringConfig {
     // IOC 载入 JdbcTemplate 的实例
     @Bean(name = "template")

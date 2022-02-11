@@ -5,7 +5,7 @@ import domain.Account;
 import java.util.List;
 
 public interface AccountService {
-    void save(Account account);
+    void insert(Account account);
 
     void update(Account account);
 

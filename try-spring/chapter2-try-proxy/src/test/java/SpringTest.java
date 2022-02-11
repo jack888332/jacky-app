@@ -11,7 +11,6 @@ public class SpringTest {
     @Autowired
     AccountService as;
 
-
     @Test
     public void test1() {
         as.transfer("jack", "mike", 5000f);

@@ -1,7 +1,7 @@
 package part3.run_transaction_without_proxy.repository;
 
 import domain.Account;
-import domain.kit.BinderForThreadAndConnection;
+import mykit.BinderForThreadAndConnection;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;

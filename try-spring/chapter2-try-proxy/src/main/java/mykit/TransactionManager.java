@@ -1,4 +1,4 @@
-package domain.kit;
+package mykit;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
