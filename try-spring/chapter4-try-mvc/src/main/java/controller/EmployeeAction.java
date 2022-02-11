@@ -1,12 +1,12 @@
-package project.controller;
+package controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import project.domain.Employee;
-import project.repository.DepartmentDao;
-import project.repository.EmployeeDao;
+import domain.Employee;
+import repository.DepartmentDao;
+import repository.EmployeeDao;
 
 import java.util.Map;
 

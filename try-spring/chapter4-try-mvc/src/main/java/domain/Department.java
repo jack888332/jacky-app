@@ -1,4 +1,4 @@
-package project.domain;
+package domain;
 
 public class Department {
 	private Integer id;

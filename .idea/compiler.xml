@@ -12,6 +12,7 @@
         <module name="try-spring-boot" />
         <module name="try-servlet" />
         <module name="try-servlet-mvc" />
+        <module name="chapter5-mixcode" />
         <module name="chapter1-try-ioc" />
         <module name="chapter3-try-aop" />
         <module name="chapter4-try-mvc" />

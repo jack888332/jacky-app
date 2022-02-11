@@ -1,4 +1,4 @@
-package part3.apply_to_transaction.repository;
+package part3.run_transaction_without_proxy.repository;
 
 import domain.Account;
 
