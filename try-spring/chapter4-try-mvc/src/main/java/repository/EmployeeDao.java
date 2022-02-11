@@ -1,9 +1,9 @@
-package project.repository;
+package repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import project.domain.Department;
-import project.domain.Employee;
+import domain.Department;
+import domain.Employee;
 
 import java.util.Collection;
 import java.util.HashMap;

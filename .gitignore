@@ -1,5 +1,6 @@
 #由idea生成的文件
-.idea/
-out/
+.idea
+.vscode
+out
 *.iml
 *.class

@@ -1,10 +1,10 @@
-package part3.apply_to_transaction.service;
+package part3.run_transaction_without_proxy.service;
 
 import domain.Account;
 import domain.kit.TransactionManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import part3.apply_to_transaction.repository.AccountDao;
+import part3.run_transaction_without_proxy.repository.AccountDao;
 
 import java.util.List;
 

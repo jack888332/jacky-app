@@ -1,7 +1,7 @@
-package project.repository;
+package repository;
 
 import org.springframework.stereotype.Repository;
-import project.domain.Department;
+import domain.Department;
 
 import java.util.Collection;
 import java.util.HashMap;

@@ -16,6 +16,7 @@
         <module>chapter2-try-proxy</module>
         <module>chapter3-try-aop</module>
         <module>chapter4-try-mvc</module>
+        <module>chapter5-mixcode</module>
     </modules>
 
     <properties>
