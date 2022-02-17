@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>user table</title>
-<link rel="stylesheet" type="text/css" href="./mix.css" />
+<link rel="stylesheet" type="text/css" href="mix.css" />
 
 </head>
 <body>
@@ -38,6 +38,6 @@
 		</c:forEach>
 	</table>
 
-	<script src="./mix.js"></script>
+	<script src="mix.js"></script>
 </body>
 </html>

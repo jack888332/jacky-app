@@ -10,114 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abe1258d-95be-424d-baa4-3945bfb3f956" name="Changes" comment="结构调整">
-      <change afterPath="$PROJECT_DIR$/try-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/resources/init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/maven/setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.memo/maven/setting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/memo/about-IED.md" beforeDir="false" afterPath="$PROJECT_DIR$/.memo/about-IED.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/memo/config/maven.settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/memo/mysql/bbb.md" beforeDir="false" afterPath="$PROJECT_DIR$/.memo/mysql/bbb.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/memo/mysql/data.init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.memo/mysql/data.init.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.environment/memo/mysql/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/.memo/mysql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-container/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-java/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/common/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/common/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/controller/module/login/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/login/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/controller/module/login/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/controller/module/user/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/controller/module/user/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/model/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/model/data_access/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/model/data_access/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/model/data_access/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/UserCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/service/UserCenterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/service/impl/UserCenterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/service/impl/UserCenterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/java/view/bean/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/java/view/bean/LoginForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/resources/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/mime/css/mix.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/mime/css/mix.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/mime/js/mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/mime/js/mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/view/common/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/view/common/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/src/main/webapp/view/user-center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/view/user-center.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/resources/druid.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-another/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-another/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-mvc/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet-mvc/target/m2e-wtp/web-resources/META-INF/maven/com.jackylab/web-servlet-mvc/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part1/servlet/RequestDemo6.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part1/servlet/RequestDemo6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/DownloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/DownloadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part2/servlet/ResponseDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part3/servlet/BrowserCacheDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part4/servlet/ServerCacheDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginFail.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginFail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login1/LoginSuccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/CheckCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login2/CheckCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part5/mixcode/login2/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo16.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo16.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo4.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/FilterDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/FilterDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/demo/part6/filter/ServletForTestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/demo/part6/filter/ServletForTestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/domain/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/domain/JDBCUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/domain/LoginInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/domain/LoginInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/java/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/java/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/resources/c3p0.properties" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/resources/c3p0.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/resources/druid.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/checkcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/checkcode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/demo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/demo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/download-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/download-demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/baseUsage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/baseUsage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-EL-JSTL/userTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/userTable.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-login2/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-login2/multi-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/multi-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/exercise-login2/multi-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/multi-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/images/demo1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/images/demo1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/js-base/event/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/js-base/event/event.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/js-base/event/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/js-base/event/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/mixcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/mixcode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/script/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/css/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/script/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/script/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/script/js/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/js/jquery-3.6.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/servlet-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/servlet-demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/main/webapp/servlet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/servlet.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-servlet/src/test/java/test/junit/LoginDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/src/test/java/test/junit/LoginDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter1-try-ioc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/EmployeeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/controller/EmployeeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/repository/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/repository/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/repository/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/chapter4-try-mvc/src/main/java/repository/EmployeeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/try-spring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/mime/css/mix.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/mime/css/mix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/mime/js/mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/mime/js/mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/view/common/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/view/common/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet-mvc/src/main/webapp/view/user-center.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet-mvc/web/view/user-center.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/checkcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/checkcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/demo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/demo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/download-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/download-demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/baseUsage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-EL-JSTL/baseUsage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-EL-JSTL/mix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-EL-JSTL/mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-EL-JSTL/userTable.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-EL-JSTL/userTable.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-login2/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/multi-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-login2/multi-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/exercise-login2/multi-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/exercise-login2/multi-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/images/demo1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/images/demo1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/js-base/event/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/js-base/event/event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/js-base/event/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/js-base/event/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/mixcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/mixcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/script/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/script/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/script/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/script/js/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/script/js/jquery-3.6.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/servlet-demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/servlet-demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/try-web/try-servlet/src/main/webapp/servlet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/try-web/try-servlet/web/servlet.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,11 +132,11 @@
       <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\eclipse-workspace\jacky-app\try-web\try-servlet-mvc" />
+      <recent name="D:\eclipse-workspace\jacky-app\try-web\try-servlet" />
       <recent name="D:\eclipse-workspace\jacky-app\try-web" />
       <recent name="D:\eclipse-workspace\jacky-app\try-servlet" />
       <recent name="D:\eclipse-workspace\jacky-app\.memo" />
-      <recent name="D:\eclipse-workspace\jacky-app\.environment" />
-      <recent name="D:\eclipse-workspace\jacky-app\try-spring\chapter4-try-mvc\web\WEB-INF" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -529,7 +449,8 @@
       <workItem from="1645021262891" duration="1881000" />
       <workItem from="1645030678123" duration="7396000" />
       <workItem from="1645110271757" duration="2285000" />
-      <workItem from="1645112764804" duration="1316000" />
+      <workItem from="1645112764804" duration="2294000" />
+      <workItem from="1645115154530" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="结构调整">
       <created>1643518168349</created>
@@ -566,7 +487,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643970701891</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="结构调整">
+      <created>1645114580767</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645114580767</updated>
+    </task>
+    <task id="LOCAL-00007" summary="结构调整">
+      <created>1645114611843</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1645114611843</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

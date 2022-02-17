@@ -5,8 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
-<script src="./multi-page.js"></script>
-<link rel="stylesheet" type="text/css" href="./multi-page.css" />
+<script src="multi-page.js"></script>
+<link rel="stylesheet" type="text/css" href="multi-page.css" />
 </head>
 <body>
 	<div class="main">
