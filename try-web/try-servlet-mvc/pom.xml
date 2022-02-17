@@ -4,21 +4,21 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.jackylab</groupId>
-		<artifactId>jacky-app</artifactId>
+		<artifactId>try-web</artifactId>
 		<version>1.0</version>
 	</parent>
 
-	<artifactId>try-servlet</artifactId>
+	<artifactId>try-servlet-mvc</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
-			<!-- JAVAEE9.0标准 -->		
+			<!-- JAVAEE9.0标准 -->
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 			<version>2.0.0</version>
-		</dependency>	
-	
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>

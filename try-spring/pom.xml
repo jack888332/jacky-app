@@ -123,28 +123,4 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- 项目管理 -->
-    <issueManagement>
-        <system>JIRA</system>
-        <url>http://192.168.3.168:8080</url>
-    </issueManagement>
-
-    <!-- 版本控制 -->
-    <scm>
-        <developerConnection>scm:git:https://github.com/jack888332/spring-ecology.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
-    <!-- 后备的远程仓库 -->
-    <repositories>
-        <repository>
-            <id>spring-libs-release</id>
-            <name>Spring Releases</name>
-            <url>https://repo.spring.io/libs-release</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
 </project>
