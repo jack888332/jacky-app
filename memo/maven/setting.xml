@@ -15,4 +15,10 @@
     <activeProfiles>
         <activeProfile>downloadSources</activeProfile>
     </activeProfiles>
+
+    <mirrors>
+        <mirror>
+            <id></id>
+        </mirror>
+    </mirrors>
 </settings>

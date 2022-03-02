@@ -6,7 +6,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
-
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
 
     <!-- 扫描包 -->
@@ -19,7 +18,7 @@
     <mvc:annotation-driven/>
 
     <!-- 配置直接转发的页面,无需经过Handler的方法 -->
-    <mvc:view-controller path="/success" view-name="test/success"/>
+    <mvc:view-controller path="/success" />
 
     <!-- 配置连接池 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -35,8 +34,7 @@
     </bean>
 
     <!-- Hibernate 配置文件路径 -->
-    <bean id="configLocation"
-          class="org.springframework.core.io.DefaultResourceLoader.ClassPathContextResource">
+    <bean id="configLocation" class="org.springframework.core.io.DefaultResourceLoader.ClassPathContextResource">
         <constructor-arg value="hibernate.cfg.xml"/>
         <constructor-arg>
             <null>DefaultClassLoader</null>
@@ -60,11 +58,13 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <!-- 配置默认的视图解析器 -->
-    <bean
-            class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"/>
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <!-- 配置DispatcherServlet不拦截哪些资源 -->
+    <mvc:resources mapping="/public/**" location="/WEB-INF/resources/" />
 
     <!-- 配置视图解析器，使用视图的名字来解析视图 -->
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
@@ -76,5 +76,4 @@
     <bean class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="i18n"/>
     </bean>
-
 </beans>

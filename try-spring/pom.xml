@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>jacky-app</artifactId>
         <groupId>com.jackylab</groupId>
+        <artifactId>jacky-app</artifactId>
         <version>1.0</version>
     </parent>
 
@@ -17,12 +17,13 @@
         <module>chapter3-try-aop</module>
         <module>chapter4-try-mvc</module>
         <module>chapter5-mixcode</module>
+        <module>chapter6-try-jpa</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>5.3.15</spring.version>
-        <hibernate.version>5.5.7.Final</hibernate.version>
+        <hibernate.version>5.6.5.Final</hibernate.version>
     </properties>
 
     <!-- 本项目的依赖信息 -->
@@ -70,6 +71,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-redis</artifactId>
+            <version>2.6.1</version>
         </dependency>
 
         <!-- Hibernate -->
@@ -106,21 +108,35 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.26</version>
         </dependency>
+
+        <!-- 文件上传相关 -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <!-- 文件上传相关 -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
     </dependencies>
 
     <!-- 子项目的默认依赖信息 -->
-    <dependencyManagement>
-        <dependencies>
-            <!-- SpringData -->
-            <!-- 在本项目的依赖信息中，有个 SpringData 的子项目 SpringDataRedis -->
-            <dependency>
-                <groupId>org.springframework.data</groupId>
-                <artifactId>spring-data-releasetrain</artifactId>
-                <version>Ingalls-SR6</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <!--    <dependencyManagement>
+            <dependencies>
+                &lt;!&ndash; SpringData &ndash;&gt;
+                &lt;!&ndash; 在本项目的依赖信息中，有个 SpringData 的子项目 SpringDataRedis &ndash;&gt;
+                <dependency>
+                    <groupId>org.springframework.data</groupId>
+                    <artifactId>spring-data-releasetrain</artifactId>
+                    <version>Ingalls-SR6</version>
+                    <type>pom</type>
+                    <scope>import</scope>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>-->
 
 </project>

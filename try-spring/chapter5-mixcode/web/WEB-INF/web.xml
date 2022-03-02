@@ -3,27 +3,20 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
     <display-name>springmvc</display-name>
 
-    <!-- WEB-INF中的文件不能被外界直接访问，只能通过servlet返回，或通过welcome-file默认访问 -->
     <welcome-file-list>
-        <welcome-file>/WEB-INF/pages/home.jsp</welcome-file>
+        <welcome-file>/WEB-INF/jsp/home.jsp</welcome-file>
     </welcome-file-list>
 
-    <!-- 在 web-app 上下文定义初始化参数，供所有 listener/filter/servlet 使用 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring.cfg.xml</param-value>
     </context-param>
 
-    <!-- Servlet上下文初始化，监听器随服务器的
-         Servlet的监听器Listener，它是实现了javax.servlet.ServletContextListener 接口的服务器端程序，
-         它也是随web应用的启动而启动，只初始化一次，随web应用的停止而销毁。
-         主要作用是：做一些初始化的内容添加工作、设置一些基本的内容、比如一些参数或者是一些固定的对象等等。
-    -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <!-- Spring：资源调度器 -->
+    <!-- 启用SpringMVC -->
     <servlet>
         <servlet-name>springDispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -38,9 +31,7 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
-    <!-- Spring：请求方法转换器
-         对应着 <input type="hidden" name="_method" value="DELETE">
-    -->
+    <!-- Spring请求方法转换器 -->
     <filter>
         <filter-name>HiddenHttpMethodFilter</filter-name>
         <filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>
@@ -50,7 +41,6 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- Spring：字符编码转换器 -->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

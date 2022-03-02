@@ -49,4 +49,7 @@ public enum ComboBox {
 	}
 
 	public abstract double getDistance();
+
+
+
 }
