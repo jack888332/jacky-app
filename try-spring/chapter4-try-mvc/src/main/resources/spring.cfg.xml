@@ -18,7 +18,7 @@
     <mvc:annotation-driven/>
 
     <!-- 配置直接转发的页面,无需经过Handler的方法 -->
-    <mvc:view-controller path="/success" />
+    <mvc:view-controller path="/success"/>
 
     <!-- 配置连接池 -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -64,7 +64,7 @@
     </bean>
 
     <!-- 配置DispatcherServlet不拦截哪些资源 -->
-    <mvc:resources mapping="/public/**" location="/WEB-INF/resources/" />
+    <mvc:resources mapping="/public/**" location="/WEB-INF/resources/"/>
 
     <!-- 配置视图解析器，使用视图的名字来解析视图 -->
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver">
@@ -75,5 +75,10 @@
     <!-- 配置国际化资源文件 -->
     <bean class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename" value="i18n"/>
+    </bean>
+
+    <!-- 文件解析器(处理上传的文件) -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"/>
     </bean>
 </beans>

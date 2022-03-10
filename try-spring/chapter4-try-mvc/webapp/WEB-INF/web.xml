@@ -23,7 +23,8 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <!-- Spring：资源调度器 -->
+    <!-- Spring:资源调度器 -->
+    <!-- spring.cfg.xml所涉及的bean都由它调度-->
     <servlet>
         <servlet-name>springDispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

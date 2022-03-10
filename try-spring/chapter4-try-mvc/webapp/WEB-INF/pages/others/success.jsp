@@ -8,10 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	成功啦！！！！！！
-	<br>
-	<fmt:message key="i18n.username"></fmt:message>
-	<br>
-	<fmt:message key="i18n.password"></fmt:message>
+	执行成功！
 </body>
 </html>

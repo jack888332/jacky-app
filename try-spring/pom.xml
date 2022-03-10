@@ -18,6 +18,7 @@
         <module>chapter4-try-mvc</module>
         <module>chapter5-mixcode</module>
         <module>chapter6-try-jpa</module>
+        <module>static-resources</module>
     </modules>
 
     <properties>
@@ -109,18 +110,44 @@
             <version>8.0.26</version>
         </dependency>
 
-        <!-- 文件上传相关 -->
+        <!-- 上传数据解析 -->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
             <version>1.4</version>
         </dependency>
 
-        <!-- 文件上传相关 -->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
+        </dependency>
+
+        <!-- 跨服务器上传 -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+
+        <!-- 跨服务器上传 -->
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>1.19.4</version>
+            <!-- 列出在计算传递依赖项时应从该依赖项的工件列表中排除的一组工件 -->
+<!--            <exclusions>
+                <exclusion>
+                    <groupId>javax.ws.rs</groupId>
+                    <artifactId>jsr311-api</artifactId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.19.4</version>
         </dependency>
     </dependencies>
 
