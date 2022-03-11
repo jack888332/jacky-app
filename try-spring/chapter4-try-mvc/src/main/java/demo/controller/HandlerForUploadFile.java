@@ -45,7 +45,7 @@ public class HandlerForUploadFile {
                 fileItem.delete();
             }
         }
-        return "others/success";
+        return "common/success";
     }
 
     /**
@@ -63,13 +63,12 @@ public class HandlerForUploadFile {
 
         String uuid = UUID.randomUUID().toString().replace("-", "");
         upload.transferTo(new File(path, upload.getOriginalFilename() + "_" + uuid + ".ppt"));
-        return "others/success";
+        return "common/success";
     }
 
     /**
-     * @param upload
-     * @return
-     * @throws Exception
+     * Jersey-Client 在 Servlet 中建立客户端向其他服务端发送请求，及传输文件数据
+     * 此程序会发生异常，可以熟手debug
      */
     @RequestMapping("/uploadFile3")
     public String uploadFile3(MultipartFile upload) throws Exception {
@@ -84,6 +83,6 @@ public class HandlerForUploadFile {
 
         WebResource webResource = client.resource(new URI(path + fileName));
         webResource.post(upload.getBytes());
-        return "others/success";
+        return "common/success";
     }
 }

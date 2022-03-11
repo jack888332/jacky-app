@@ -81,4 +81,16 @@
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="10485760"/>
     </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/tryInterceptor/*"/>
+            <ref bean="myInterceptor1"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/tryInterceptor/*"/>
+            <ref bean="myInterceptor2"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+    <!-- 与Spring整合的方法：目标类实现Spring的相关接口，在放到Spring-IOC（目的是被Spring识别和接管）-->
 </beans>

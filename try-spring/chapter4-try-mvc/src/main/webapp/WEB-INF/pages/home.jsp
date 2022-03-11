@@ -34,5 +34,9 @@
 	<a href="router/try-ajax">尝试Ajax请求</a>
     <br>
     <a href="router/try-upload">尝试上传文件</a>
+	<br>
+	<a href="handleServletException/happenException">触发异常</a>
+	<br>
+	<a href="tryInterceptor/triggerInterceptor">触发拦截器</a>
 </body>
 </html>

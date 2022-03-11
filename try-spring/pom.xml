@@ -16,8 +16,8 @@
         <module>chapter2-try-proxy</module>
         <module>chapter3-try-aop</module>
         <module>chapter4-try-mvc</module>
-        <module>chapter5-mixcode</module>
-        <module>chapter6-try-jpa</module>
+        <module>chapter5-try-jpa</module>
+        <module>mixcode</module>
         <module>static-resources</module>
     </modules>
 
