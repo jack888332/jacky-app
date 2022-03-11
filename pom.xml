@@ -92,14 +92,14 @@
             <version>1.7.36</version>
         </dependency>
 
-        <!-- 快速构建CODE -->
+        <!-- 快速构建POJO -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
 
-        <!-- json -->
+        <!-- json解析器 -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>

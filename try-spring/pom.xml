@@ -68,6 +68,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 配置AOP时所用到的通配符表达式 -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.8</version>
+        </dependency>
+
         <!-- SpringDataRedis 继承 SpringData -->
         <dependency>
             <groupId>org.springframework.data</groupId>

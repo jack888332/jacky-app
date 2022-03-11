@@ -1,6 +1,7 @@
-package part3.all_beans_with_annotation;
+package demo;
 
-import kit.MyJdbcUtils;
+import demo.kit.MyDataSource;
+import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,14 +10,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
 
-/**
- * 指定当前类是配置类（替代XML）
- */
 @Configuration
-/**
- * 指定要扫描哪些包中的组件，让IOC载入它们
- */
-@ComponentScan("part2.not_all_beans_in_xml")
+@ComponentScan({"demo"})
 public class MySpringConfig {
     // IOC 载入 JdbcTemplate 的实例
     @Bean(name = "template")
@@ -27,6 +22,11 @@ public class MySpringConfig {
     // IOC 载入 DataSource 的实例
     @Bean(name = "ds1")
     public DataSource newDataSource() {
-        return MyJdbcUtils.getDataSource();
+        return MyDataSource.getDataSource();
+    }
+
+    @Bean
+    public QueryRunner newQueryRunner() {
+        return new QueryRunner();
     }
 }

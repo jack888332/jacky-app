@@ -1,25 +1,21 @@
-import domain.Account;
+package debug;
+
+import demo.MySpringConfig;
+import demo.service.AccountService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import part2.not_all_beans_in_xml.service.UserService;
-import part3.all_beans_with_annotation.MySpringConfig;
-
-import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = MySpringConfig.class)
-public class SpringTest_3 {
+public class SpringAopTest {
     @Autowired
-    UserService us;
+    AccountService accountService;
 
     @Test
     public void test1() {
-        List<Account> list = us.findAll();
-        for (Account account : list) {
-            System.out.println(account);
-        }
+        accountService.transfer("mike", "jack", 5000f);
     }
 }

@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import part1.all_beans_in_xml.service.AccountService;
-import part2.some_beans_with_annotation.service.UserService;
+import part2.not_all_beans_in_xml.service.UserService;
 
 import java.util.List;
 

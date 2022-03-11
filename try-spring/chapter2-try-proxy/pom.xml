@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>chapter2-try-proxy</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -19,5 +20,4 @@
             <version>1.7</version>
         </dependency>
     </dependencies>
-
 </project>
