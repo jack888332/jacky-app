@@ -1,6 +1,6 @@
-package repository;
+package demo.repository;
 
-import domain.Department;
+import demo.domain.Department;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;

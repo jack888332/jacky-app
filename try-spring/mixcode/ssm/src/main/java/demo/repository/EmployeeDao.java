@@ -1,7 +1,7 @@
-package repository;
+package demo.repository;
 
-import domain.Department;
-import domain.Employee;
+import demo.domain.Department;
+import demo.domain.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

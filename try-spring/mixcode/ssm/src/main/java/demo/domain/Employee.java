@@ -1,4 +1,4 @@
-package mapper;
+package demo.domain;
 
 public class Employee {
 	private Integer id;
