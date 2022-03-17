@@ -82,6 +82,7 @@
             <version>2.6.1</version>
         </dependency>
 
+        <!--*******************************************************-->
         <!-- Hibernate -->
         <dependency>
             <groupId>org.hibernate</groupId>

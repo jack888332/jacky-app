@@ -2,17 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="demo"/>
-    <context:annotation-config/>
 
-    <aop:config>
-        <aop:aspect id="aspect1" ref="myLogger" order="1">
-            <aop:before method="print1" pointcut="execution(public void demo.service.impl.AccountServiceImpl.transfer(String,String,Float))"/>
-        </aop:aspect>
-    </aop:config>
 </beans>

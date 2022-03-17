@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="jpa1" transaction-type="RESOURCE_LOCAL">
+        <!--配置JPA规范的服务提供商 -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- 标准的和供应商特定的属性，IDE检测到org.hibernate.cfg.AvailableSettings定义了可用属性（值定义于不同的实现类） -->
+        <properties>
+            <!-- 连接参数 -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://8.134.218.201:3306/nf_test"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="Jack_19900922#"/>
+            <!-- 运维参数 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>

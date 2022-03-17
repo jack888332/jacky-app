@@ -6,15 +6,18 @@
 
     <parent>
         <groupId>com.jackylab</groupId>
-        <artifactId>try-spring</artifactId>
+        <artifactId>chapter5-try-jpa</artifactId>
         <version>1.0</version>
     </parent>
 
-    <artifactId>chapter5-try-jpa</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>spring-jpa</artifactId>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>hibernate-jpa</module>
-        <module>spring-jpa</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+    </dependencies>
 </project>
